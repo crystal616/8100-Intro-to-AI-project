@@ -1,0 +1,9 @@
+,datasets,test accuracy
+0,breast_cancer,0.9708029197080292
+1,diabetes,0.7597402597402597
+2,covtype,0.8484686098159238
+3,cod_rna,0.954800325458274
+4,HIGGS,0.752474
+5,ijcnn1,0.96078559666743
+6,Sensorless,0.988
+7,webspam,0.99052
