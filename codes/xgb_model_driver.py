@@ -45,6 +45,6 @@ accu_df['test accuracy'] = test_accuracies
 accu_df['used time'] = used_time
 os.chdir('/home/cai7/test_accu')
 accu_df.to_excel('xgb_accu.xlsx')
-accu_df.to_txt('xgb_accu.txt')
+accu_df.to_csv('xgb_accu.txt')
 
 
