@@ -1,16 +1,26 @@
-1. Copy py file creat_folder.py to the folder created for this project.
-all files in folder code 
 
-2. enviroment: Clemson Palmetto, 24+ cores, 100+ gb mem.
+
+1. enviroment: Clemson Palmetto, 24+ cores, 100+ gb mem.
                Module: Anaconda3/5.1.0
                Python: 3.7.4
                Packages needed: xgboost, pandas, numpy, scipy, sklearn, mlxtend, subprocess, time, pickle, xlrd
                May need other packages, please install as required.
-               
-3. 
-3. Install robust_xgboost package from Github using Unix command line:
+
+2. Copy py file folder_create.py to the folder created for this project. Run the file to create home folder 'cai_cui' and all needed folders.
+
+3. cd cai_cui
+
+4. Install robust_xgboost package from Github using Unix command line:
                git clone --recursive https://github.com/chenhongge/RobustTrees.git
                cd RobustTrees
                ./build.sh
                make
+
+5. Copy all code files in submitted folder Code to /cai_cui/codes
                
+6. Download datasets:
+              
+
+7.
+
+8.
