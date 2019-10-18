@@ -8,26 +8,26 @@ import pandas as pd
 import xgboost as xgb
 import numpy as np
 import os
-os.chdir('/home/cai7/codes')
+os.chdir('../codes')
 import cheng_attack_rxgb
 from sklearn.datasets import load_svmlight_file
 
-dataset = 'Fashion_MNIST'
-nclasses = 10
-n_features = 784
+dataset = 'covtype'
+nclasses = 7
+n_features = 54
 binary = False
 if nclasses == 2:
     binary = True
 
 bst = xgb.Booster()
-model_path = '/home/cai7/models/rxgb/{}/{}_rxgb.model'.format(dataset, dataset)
+model_path = '../models/rxgb/{}/{}_rxgb.model'.format(dataset, dataset)
 bst.load_model(model_path)
-test_data, test_label = load_svmlight_file('/home/cai7/chosen_sample/rxgb/{}_rxgb_samples.s'.format(dataset), n_features = n_features)
+test_data, test_label = load_svmlight_file('../chosen_sample/rxgb/{}_rxgb_samples.s'.format(dataset), n_features = n_features)
 test_data = test_data.toarray()
 test_label = test_label.astype('int')
-if len(test_label) >= 1000:
-    test_data = test_data[:500]
-    test_label = test_label[:500]
+if len(test_label) >= 100:
+    test_data = test_data[:100]
+    test_label = test_label[:100]
 
 ori_points = []
 results = []
@@ -54,7 +54,7 @@ pert['index'] = index
 pert['distance'] = dis
 pert['pert point'] = points
 pert['ori point'] = ori_points
-os.chdir('/home/cai7/attack/cheng')
+os.chdir('../attack/cheng')
 pert.to_csv('{}_cheng_attack_rxgb.txt'.format(dataset))
 with open('{}_cheng_rxgb_ave.txt'.format(dataset), 'w') as f:
     f.write('average distance: ' + str(total_dis/len(test_label)))

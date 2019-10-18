@@ -19,7 +19,7 @@ model_path = '../models/xgb/{}_xgb.model'.format(dataset)
 model.load_model(model_path)
 test_df = pd.read_pickle('../chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
 if test_df.shape[0] >= 1000:
-    _, test_df = train_test_split(test_df, test_size = 200)
+    _, test_df = train_test_split(test_df, test_size = 100)
 
 
 test_df = test_df.reset_index(drop=True)
