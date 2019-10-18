@@ -16,3 +16,6 @@ nohup python xgbKantchelianAttack.py -d=../chosen_sample/rxgb/cod_rna_rxgb_sampl
 nohup python xgbKantchelianAttack.py -d=../chosen_sample/rxgb/covtype_rxgb_samples.s -m=../models/rxgb/covtype/covtype_rxgb.model -c=7 >../Kattack_result/rxgb/covtype_rxgb_log.txt 2>&1 &
 nohup python xgbKantchelianAttack.py -d=../chosen_sample/rxgb/diabetes_rxgb_samples.s -m=../models/rxgb/diabetes/diabetes_rxgb.model -c=2 >../Kattack_result/rxgb/diabetes_rxgb_log.txt 2>&1 &
 nohup python xgbKantchelianAttack.py -d=../chosen_sample/rxgb/MNIST2_6_rxgb_samples.s -m=../models/rxgb/MNIST2_6_rxgb.model -c=2 >../Kattack_result/rxgb/MNIST2_6_rxgb_log.txt 2>&1 &
+
+#Cheng attack
+nohup python cheng_attack_driver.py >../Cattack_result/xgb/covtype_xgb_log.txt 2>&1 &

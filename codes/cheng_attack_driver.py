@@ -8,18 +8,18 @@ import pandas as pd
 import xgboost as xgb
 import numpy as np
 import os
-os.chdir('/home/cai7/codes')
+#os.chdir('../codes')
 import cheng_attack
 from sklearn.model_selection import train_test_split
 
-dataset = 'MNIST2_6'
-nclasses = 2
+dataset = 'covtype'
+nclasses = 7
 model = xgb.Booster()
-model_path = '/home/cai7/models/xgb/{}_xgb.model'.format(dataset)
+model_path = '../models/xgb/{}_xgb.model'.format(dataset)
 model.load_model(model_path)
-test_df = pd.read_pickle('/home/cai7/chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
+test_df = pd.read_pickle('../chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
 if test_df.shape[0] >= 1000:
-    _, test_df = train_test_split(test_df, test_size = 500)
+    _, test_df = train_test_split(test_df, test_size = 200)
 
 
 test_df = test_df.reset_index(drop=True)
@@ -54,10 +54,11 @@ pert['index'] = index
 pert['distance'] = dis
 pert['pert point'] = points
 pert['ori point'] = ori_points
-os.chdir('/home/cai7/attack/cheng')
+os.chdir('../attack/cheng')
 pert.to_csv('{}_cheng_attack_xgb.txt'.format(dataset))
 with open('{}_cheng_xgb_ave.txt'.format(dataset), 'w') as f:
     f.write('average distance: ' + str(total_dis/len(test_label)))
+print("average_distance: ",total_dis/len(test_label))
 
   
 
