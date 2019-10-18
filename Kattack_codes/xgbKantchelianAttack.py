@@ -12,6 +12,8 @@ import time
 import argparse
 import pickle
 
+import pandas as pd
+
 
 GUARD_VAL = 2e-7
 ROUND_DIGITS = 20
@@ -481,14 +483,23 @@ def main(args):
 	else:
 		attack = xgbMultiClassKantchelianAttack(model, num_classes=args['num_classes'], guard_val=args['guard_val'], round_digits=args['round_digits'])
 	
-	test_data, test_labels = load_svmlight_file(args['data'])
-	test_data = test_data.toarray()
+	#test_data, test_labels = load_svmlight_file(args['data'])
+	#test_data = test_data.toarray()
+	test = pd.read_pickle(args['data'])
+	test_data = test.drop(columns = ['label'])
+	test_labels = test['label']
+	test_data = np.array(test_data)
+	test_labels = np.array(test_labels)
+	
 	if args['feature_start'] > 0:
 		test_data = np.hstack((np.zeros((len(test_data),args['feature_start'])),test_data))
 	test_labels = test_labels[:,np.newaxis].astype(int)
-	
+	print('sample length: ', test_data.shape[0])
 	arr = np.arange(len(test_data))
 	np.random.shuffle(arr)
+	if test_data.shape[0]>100:
+		arr=arr[:100]
+		print('select sample length: ', arr.shape[0])
 	samples = arr[args['offset']:args['offset']+args['num_attacks']]
 	num_attacks = len(samples) # real number of attacks cannot be larger than test data size
 	avg_dist = 0
