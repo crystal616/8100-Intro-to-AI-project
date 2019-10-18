@@ -53,6 +53,16 @@
              python rxgb_test_sampling.py
              The accuracies are stored in folder /test_accu/rxgb_test_accu.txt. The chosen sample sets are in folder /chosen_sample
 
-10. 
+10. Cheng's attack:
+             Attack natual xgboost models:
+                python cheng_attack_driver.py
+                For each dataset, we have a file datasetname_cheng_attack_xgb.txt, which has the distance, original points and points after perturbation. 
+                We also output the average distance to file datasetname_cheng_xgb_ave.txt
+             Attack robust xgboost models:
+                python cheng_attack_rxgb_driver.py
+                For each dataset, we have a file datasetname_cheng_attack_rxgb.txt, which has the distance, original points and points after perturbation. 
+                We also output the average distance to file datasetname_cheng_rxgb_ave.txt
 
-11. 
+11. Kantchelian's attack:
+             
+             
