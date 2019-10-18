@@ -60241,3 +60241,3545 @@ Solution count 4: 0.186359 0.218511 0.225111 0.235612
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 1.863593895336e-01, best bound 1.863593895336e-01, gap 0.0000%
+
+Gurobi 8.1.1 (linux64, Python) logging started Fri Oct 18 18:54:01 2019
+
+Changed value of parameter Threads to 8
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.25s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   12089    1.2634351e-02   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 1.263435e-02, 12089 iterations, 4.53 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01263    0 2979          -    0.01263      -     -    5s
+H    0     0                       0.0426213    0.01263  70.4%     -    5s
+     0     0    0.03579    0  975    0.04262    0.03579  16.0%     -    7s
+     0     0    0.04261    0    1    0.04262    0.04261  0.02%     -    8s
+H    0     0                       0.0426142    0.04261  0.00%     -    8s
+
+Explored 1 nodes (12742 simplex iterations) in 8.18 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 2: 0.0426142 0.0426213 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.261420457501e-02, best bound 4.261420457501e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4096 rows and 2723 columns
+Presolve time: 0.77s
+Presolved: 10675 rows, 6860 columns, 47333 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3759 continuous, 3101 integer (3101 binary)
+
+Root relaxation: objective 9.974940e-03, 7751 iterations, 1.95 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01006    0 1540    0.50000    0.01006  98.0%     -    4s
+H    0     0                       0.0885560    0.01006  88.6%     -    5s
+H    0     0                       0.0340026    0.01006  70.4%     -    5s
+     0     0    0.01559    0  697    0.03400    0.01559  54.2%     -    6s
+     0     0    0.02389    0  115    0.03400    0.02389  29.8%     -    6s
+H    0     0                       0.0316980    0.02389  24.6%     -    6s
+     0     0    0.02576    0  101    0.03170    0.02576  18.7%     -    6s
+H    0     0                       0.0308821    0.02576  16.6%     -    6s
+     0     0     cutoff    0         0.03088    0.03088  0.00%     -    6s
+
+Cutting planes:
+  Implied bound: 2
+
+Explored 1 nodes (8517 simplex iterations) in 6.61 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0308821 0.031698 0.0340026 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.088209426016e-02, best bound 3.088209426016e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.34214
+
+Presolve removed 6561 rows and 4323 columns
+Presolve time: 0.79s
+Presolved: 8210 rows, 5260 columns, 35489 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 2864 continuous, 2396 integer (2396 binary)
+
+Root relaxation: objective 9.599948e-03, 5002 iterations, 0.81 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00960    0 1114    0.34214    0.00960  97.2%     -    2s
+H    0     0                       0.0231685    0.00960  58.6%     -    2s
+     0     0    0.01531    0  374    0.02317    0.01531  33.9%     -    3s
+     0     0    0.02316    0    1    0.02317    0.02316  0.03%     -    3s
+H    0     0                       0.0231615    0.02316  0.00%     -    3s
+
+Explored 1 nodes (5347 simplex iterations) in 3.46 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0231615 0.0231685 0.0231685 0.34214 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.316154162844e-02, best bound 2.316154162844e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.9278
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 3.711551e-03, 12155 iterations, 3.55 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00371    0 2178    0.92780    0.00371   100%     -    4s
+H    0     0                       0.0145209    0.00371  74.4%     -    5s
+     0     0    0.00823    0  282    0.01452    0.00823  43.3%     -    7s
+
+Explored 1 nodes (12562 simplex iterations) in 7.38 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 2: 0.0145209 0.9278 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.452091515387e-02, best bound 1.452091515387e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.987302
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.24s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 2.347245e-02, 12937 iterations, 4.68 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.02347    0 3323    0.98730    0.02347  97.6%     -    5s
+     0     0    0.02357    0 3323    0.98730    0.02357  97.6%     -   11s
+H    0     0                       0.2686906    0.03694  86.3%     -   15s
+     0     0    0.05838    0 1883    0.26869    0.05838  78.3%     -   16s
+H    0     0                       0.2683463    0.05838  78.2%     -   16s
+H    0     0                       0.2474932    0.05838  76.4%     -   17s
+H    0     0                       0.2453555    0.05838  76.2%     -   17s
+     0     0    0.08605    0 1777    0.24536    0.08605  64.9%     -   17s
+     0     0    0.09558    0  325    0.24536    0.09558  61.0%     -   18s
+     0     0    0.10313    0  343    0.24536    0.10313  58.0%     -   18s
+     0     0    0.19774    0  343    0.24536    0.19774  19.4%     -   18s
+H    0     0                       0.2085940    0.19774  5.20%     -   18s
+H    0     0                       0.2058109    0.19774  3.92%     -   19s
+     0     0    0.19774    0  302    0.20581    0.19774  3.92%     -   19s
+     0     0    0.19774    0  299    0.20581    0.19774  3.92%     -   19s
+     0     0 infeasible    0         0.20581    0.20581  0.00%     -   19s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 20
+
+Explored 1 nodes (15555 simplex iterations) in 19.37 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.205811 0.208594 0.245355 ... 0.987302
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.058108505427e-01, best bound 2.058108505427e-01, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.627609
+
+Presolve removed 1673 rows and 1140 columns
+Presolve time: 0.70s
+Presolved: 13098 rows, 8443 columns, 59261 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4642 continuous, 3801 integer (3801 binary)
+
+Root relaxation: objective 9.381276e-03, 8889 iterations, 2.38 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00938    0 1905    0.62761    0.00938  98.5%     -    3s
+H    0     0                       0.0340322    0.00938  72.4%     -    4s
+H    0     0                       0.0325074    0.00938  71.1%     -    5s
+     0     0    0.01727    0  889    0.03251    0.01727  46.9%     -    6s
+     0     0    0.02997    0   66    0.03251    0.02997  7.79%     -    6s
+H    0     0                       0.0310741    0.02997  3.54%     -    6s
+     0     0 infeasible    0         0.03107    0.03107  0.00%     -    6s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (9641 simplex iterations) in 6.22 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0310741 0.0325074 0.0325074 ... 0.627609
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.107414048296e-02, best bound 3.107414048296e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.735308
+
+Presolve removed 1188 rows and 818 columns
+Presolve time: 0.68s
+Presolved: 13583 rows, 8765 columns, 61618 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4814 continuous, 3951 integer (3951 binary)
+
+Root relaxation: objective 1.352695e-02, 10711 iterations, 3.79 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01353    0 2978    0.73531    0.01353  98.2%     -    5s
+H    0     0                       0.0491627    0.01353  72.5%     -    5s
+     0     0    0.02921    0  290    0.04916    0.02921  40.6%     -    7s
+
+Explored 1 nodes (11054 simplex iterations) in 7.85 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0491627 0.0491627 0.735308 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.916266201926e-02, best bound 4.916266201926e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.586254
+
+Presolve removed 2447 rows and 1642 columns
+Presolve time: 0.70s
+Presolved: 12324 rows, 7941 columns, 55330 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4356 continuous, 3585 integer (3585 binary)
+
+Root relaxation: objective 1.379840e-02, 9443 iterations, 2.98 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01380    0 2221    0.58625    0.01380  97.6%     -    4s
+H    0     0                       0.0654260    0.01380  78.9%     -    4s
+H    0     0                       0.0638568    0.01380  78.4%     -    6s
+     0     0    0.03038    0  836    0.06386    0.03038  52.4%     -    6s
+     0     0    0.04381    0  117    0.06386    0.04381  31.4%     -    6s
+H    0     0                       0.0618963    0.04381  29.2%     -    6s
+H    0     0                       0.0610808    0.04381  28.3%     -    6s
+H    0     0                       0.0599735    0.04381  26.9%     -    6s
+H    0     0                       0.0576969    0.04381  24.1%     -    6s
+     0     0    0.05572    0   54    0.05770    0.05572  3.43%     -    7s
+H    0     0                       0.0557183    0.05572  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 3
+  Flow cover: 1
+
+Explored 1 nodes (10608 simplex iterations) in 7.06 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0557183 0.0576969 0.0599735 ... 0.586254
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.571827658809e-02, best bound 5.571827658809e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4879 rows and 3253 columns
+Presolve time: 0.84s
+Presolved: 9892 rows, 6330 columns, 43525 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3476 continuous, 2854 integer (2854 binary)
+
+Root relaxation: objective 5.613863e-03, 6909 iterations, 1.42 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00561    0 1182    0.50000    0.00561  98.9%     -    3s
+H    0     0                       0.0126958    0.00561  55.8%     -    3s
+H    0     0                       0.0112438    0.00561  50.1%     -    4s
+     0     0    0.01016    0  309    0.01124    0.01016  9.60%     -    4s
+H    0     0                       0.0108888    0.01016  6.65%     -    4s
+*    0     0               0       0.0105649    0.01056  0.00%     -    4s
+
+Explored 1 nodes (7169 simplex iterations) in 4.61 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0105649 0.0108888 0.0112438 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.056492982583e-02, best bound 1.056492982583e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.597327
+
+Presolve removed 2141 rows and 1439 columns
+Presolve time: 0.69s
+Presolved: 12630 rows, 8144 columns, 56836 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4470 continuous, 3674 integer (3674 binary)
+
+Root relaxation: objective 9.846183e-03, 10426 iterations, 2.78 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00985    0 2779    0.59733    0.00985  98.4%     -    4s
+H    0     0                       0.0507674    0.00985  80.6%     -    4s
+H    0     0                       0.0457252    0.00985  78.5%     -    6s
+H    0     0                       0.0453310    0.00985  78.3%     -    6s
+     0     0    0.02472    0  768    0.04533    0.02472  45.5%     -    7s
+     0     0    0.02804    0   75    0.04533    0.02804  38.2%     -    7s
+H    0     0                       0.0448269    0.03095  31.0%     -    7s
+     0     0    0.03547    0   71    0.04483    0.03547  20.9%     -    7s
+H    0     0                       0.0413411    0.03547  14.2%     -    7s
+H    0     0                       0.0413257    0.03547  14.2%     -    7s
+     0     0     cutoff    0         0.04133    0.04133  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 1
+  Flow cover: 3
+
+Explored 1 nodes (11574 simplex iterations) in 7.67 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 7: 0.0413257 0.0413411 0.0448269 ... 0.597327
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.132567781366e-02, best bound 4.132567781366e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.591767
+
+Presolve removed 2344 rows and 1580 columns
+Presolve time: 0.74s
+Presolved: 12427 rows, 8003 columns, 55847 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4395 continuous, 3608 integer (3608 binary)
+
+Root relaxation: objective 8.129397e-03, 8621 iterations, 2.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00813    0 1959    0.59177    0.00813  98.6%     -    3s
+H    0     0                       0.0291723    0.00813  72.1%     -    3s
+H    0     0                       0.0238348    0.00813  65.9%     -    5s
+     0     0    0.01576    0  509    0.02383    0.01576  33.9%     -    5s
+     0     0    0.02218    0   15    0.02383    0.02218  6.94%     -    5s
+H    0     0                       0.0234798    0.02218  5.53%     -    5s
+*    0     0               0       0.0231559    0.02316  0.00%     -    5s
+
+Explored 1 nodes (9039 simplex iterations) in 5.94 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0231559 0.0234798 0.0238348 ... 0.591767
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.315594509605e-02, best bound 2.315594509605e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4847 rows and 3229 columns
+Presolve time: 0.80s
+Presolved: 9924 rows, 6354 columns, 43688 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3488 continuous, 2866 integer (2866 binary)
+
+Root relaxation: objective 7.986484e-03, 7133 iterations, 1.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00799    0 1482    0.50000    0.00799  98.4%     -    2s
+H    0     0                       0.0235470    0.00799  66.1%     -    3s
+     0     0    0.01616    0  389    0.02355    0.01616  31.4%     -    4s
+     0     0 infeasible    0         0.02355    0.02355  0.00%     -    4s
+
+Explored 1 nodes (7558 simplex iterations) in 4.53 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 2: 0.023547 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.354697014593e-02, best bound 2.354697014593e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.812801
+
+Presolve removed 711 rows and 477 columns
+Presolve time: 0.57s
+Presolved: 14060 rows, 9106 columns, 64022 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4996 continuous, 4110 integer (4110 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   11555    2.0581880e-02   5.185313e+01   0.000000e+00      5s
+   11662    1.9124869e-02   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 1.912487e-02, 11662 iterations, 4.51 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01912    0 3238    0.81280    0.01912  97.6%     -    6s
+H    0     0                       0.1282959    0.01912  85.1%     -    6s
+H    0     0                       0.1254819    0.01912  84.8%     -    8s
+     0     0    0.06077    0 1145    0.12548    0.06077  51.6%     -    9s
+     0     0    0.09344    0  139    0.12548    0.09344  25.5%     -    9s
+H    0     0                       0.1235085    0.09344  24.3%     -    9s
+H    0     0                       0.1228220    0.12282  0.00%     -    9s
+     0     0    0.12282    0   83    0.12282    0.12282  0.00%     -    9s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 2
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (12546 simplex iterations) in 9.67 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.122822 0.123509 0.125482 ... 0.812801
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.228220394816e-01, best bound 1.228220394816e-01, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.77s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.016456e-02, 8020 iterations, 2.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01026    0 1807    0.50000    0.01026  97.9%     -    4s
+H    0     0                       0.0360045    0.01026  71.5%     -    4s
+H    0     0                       0.0328873    0.01026  68.8%     -    6s
+H    0     0                       0.0328873    0.01026  68.8%     -    6s
+     0     0    0.01922    0  651    0.03289    0.01922  41.5%     -    6s
+     0     0    0.02508    0  106    0.03289    0.02508  23.7%     -    6s
+H    0     0                       0.0318501    0.02508  21.3%     -    6s
+     0     0    0.02529    0   66    0.03185    0.02529  20.6%     -    6s
+     0     0    0.02566    0   62    0.03185    0.02566  19.4%     -    6s
+     0     0    0.02676    0  103    0.03185    0.02676  16.0%     -    6s
+H    0     0                       0.0318457    0.02840  10.8%     -    6s
+     0     0     cutoff    0         0.03185    0.03185  0.00%     -    6s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 2
+
+Explored 1 nodes (9001 simplex iterations) in 7.02 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0318457 0.0318501 0.0328873 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.184570909187e-02, best bound 3.184570909187e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4258 rows and 2836 columns
+Presolve time: 0.78s
+Presolved: 10513 rows, 6747 columns, 46633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3701 continuous, 3046 integer (3046 binary)
+
+Root relaxation: objective 9.010497e-03, 7620 iterations, 1.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00922    0 1297    0.50000    0.00922  98.2%     -    4s
+H    0     0                       0.0252090    0.00922  63.4%     -    4s
+H    0     0                       0.0212289    0.00922  56.6%     -    5s
+     0     0    0.01913    0  681    0.02123    0.01913  9.89%     -    5s
+
+Cutting planes:
+  Implied bound: 2
+
+Explored 1 nodes (8061 simplex iterations) in 5.80 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0212289 0.025209 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.122887158668e-02, best bound 2.122887158668e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4622 rows and 3080 columns
+Presolve time: 0.80s
+Presolved: 10149 rows, 6503 columns, 44708 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3569 continuous, 2934 integer (2934 binary)
+
+Root relaxation: objective 1.035048e-02, 7025 iterations, 1.66 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01035    0 1457    0.50000    0.01035  97.9%     -    3s
+H    0     0                       0.0355326    0.01035  70.9%     -    3s
+H    0     0                       0.0339570    0.01035  69.5%     -    4s
+     0     0    0.01668    0  690    0.03396    0.01668  50.9%     -    4s
+     0     0    0.02647    0  111    0.03396    0.02647  22.0%     -    4s
+H    0     0                       0.0339429    0.03242  4.49%     -    4s
+     0     0     cutoff    0         0.03394    0.03394  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+
+Explored 1 nodes (7824 simplex iterations) in 5.03 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0339429 0.033957 0.033957 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.394288365127e-02, best bound 3.394288365127e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4420 rows and 2942 columns
+Presolve time: 0.80s
+Presolved: 10351 rows, 6641 columns, 45812 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3641 continuous, 3000 integer (3000 binary)
+
+Root relaxation: objective 9.139313e-03, 6953 iterations, 1.32 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00914    0 1552    0.50000    0.00914  98.2%     -    2s
+H    0     0                       0.0249983    0.00914  63.4%     -    2s
+H    0     0                       0.0243609    0.00914  62.5%     -    4s
+     0     0    0.01643    0  632    0.02436    0.01643  32.5%     -    4s
+     0     0    0.02278    0    4    0.02436    0.02278  6.48%     -    4s
+H    0     0                       0.0241822    0.02278  5.79%     -    4s
+H    0     0                       0.0227854    0.02278  0.01%     -    4s
+
+Explored 1 nodes (7423 simplex iterations) in 4.74 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0227854 0.0241822 0.0243609 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.278536138588e-02, best bound 2.278314016462e-02, gap 0.0097%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4759 rows and 3169 columns
+Presolve time: 0.79s
+Presolved: 10012 rows, 6414 columns, 43995 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3522 continuous, 2892 integer (2892 binary)
+
+Root relaxation: objective 7.259910e-03, 7045 iterations, 1.35 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00726    0 1348    0.50000    0.00726  98.5%     -    3s
+H    0     0                       0.0192127    0.00726  62.2%     -    3s
+     0     0    0.01505    0  576    0.01921    0.01505  21.7%     -    4s
+*    0     0               0       0.0190415    0.01904  0.00%     -    4s
+
+Explored 1 nodes (7491 simplex iterations) in 4.57 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0190415 0.0192127 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.904145005973e-02, best bound 1.904145005973e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.640415
+
+Presolve removed 1473 rows and 1004 columns
+Presolve time: 0.66s
+Presolved: 13298 rows, 8579 columns, 60220 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4713 continuous, 3866 integer (3866 binary)
+
+Root relaxation: objective 6.399527e-03, 11532 iterations, 3.39 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00640    0 2642    0.64042    0.00640  99.0%     -    4s
+H    0     0                       0.0170005    0.00640  62.4%     -    5s
+     0     0    0.01240    0  142    0.01700    0.01240  27.1%     -    7s
+     0     0    0.01537    0    3    0.01700    0.01537  9.58%     -    7s
+H    0     0                       0.0161224    0.01537  4.66%     -    7s
+H    0     0                       0.0156019    0.01537  1.47%     -    7s
+     0     0 infeasible    0         0.01560    0.01560  0.00%     -    7s
+
+Explored 1 nodes (11725 simplex iterations) in 7.54 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0156019 0.0161224 0.0170005 ... 0.640415
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.560193728456e-02, best bound 1.560193728456e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4460 rows and 2968 columns
+Presolve time: 0.79s
+Presolved: 10311 rows, 6615 columns, 45519 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3628 continuous, 2987 integer (2987 binary)
+
+Root relaxation: objective 6.714978e-03, 7154 iterations, 1.32 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00672    0 1359    0.50000    0.00672  98.7%     -    3s
+H    0     0                       0.0207724    0.00672  67.7%     -    3s
+H    0     0                       0.0200878    0.00672  66.6%     -    4s
+     0     0    0.01194    0  161    0.02009    0.01194  40.6%     -    4s
+     0     0    0.01450    0   18    0.02009    0.01450  27.8%     -    5s
+H    0     0                       0.0198887    0.01450  27.1%     -    5s
+H    0     0                       0.0182313    0.01450  20.5%     -    5s
+     0     0     cutoff    0         0.01823    0.01823  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (7544 simplex iterations) in 5.14 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0182313 0.0198887 0.0200878 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.823125997684e-02, best bound 1.823125997684e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4841 rows and 3225 columns
+Presolve time: 0.81s
+Presolved: 9930 rows, 6358 columns, 43718 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3490 continuous, 2868 integer (2868 binary)
+
+Root relaxation: objective 9.998381e-03, 6998 iterations, 1.38 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01000    0 1439    0.50000    0.01000  98.0%     -    2s
+H    0     0                       0.0274941    0.01000  63.6%     -    3s
+H    0     0                       0.0268567    0.01000  62.8%     -    4s
+     0     0    0.01929    0  504    0.02686    0.01929  28.2%     -    4s
+     0     0    0.02550    0    8    0.02686    0.02550  5.06%     -    4s
+H    0     0                       0.0256448    0.02550  0.57%     -    4s
+     0     0 infeasible    0         0.02564    0.02564  0.00%     -    4s
+
+Cutting planes:
+  MIR: 1
+  Zero half: 1
+
+Explored 1 nodes (7384 simplex iterations) in 4.62 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0256448 0.0268567 0.0268567 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.564483984943e-02, best bound 2.564483984943e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.75s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.100856e-02, 8018 iterations, 2.19 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01112    0 1755    0.50000    0.01112  97.8%     -    4s
+H    0     0                       0.0430287    0.01112  74.1%     -    4s
+H    0     0                       0.0430216    0.01112  74.1%     -    6s
+     0     0 infeasible    0         0.04302    0.04302  0.00%     -    6s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (8653 simplex iterations) in 6.53 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0430216 0.0430287 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.302162795815e-02, best bound 4.302162795815e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.9278
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   13117    2.7199690e-03   1.977174e+03   0.000000e+00      5s
+   15198    5.7759386e-03   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 5.775939e-03, 15198 iterations, 6.77 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00578    0 3358    0.92780    0.00578  99.4%     -    7s
+H    0     0                       0.5000000    0.00578  98.8%     -    7s
+     0     0    0.00701    0 3168    0.50000    0.00701  98.6%     -   15s
+H    0     0                       0.0766902    0.00701  90.9%     -   15s
+     0     0    0.01218    0  732    0.07669    0.01218  84.1%     -   17s
+     0     0    0.01243    0  175    0.07669    0.01243  83.8%     -   18s
+H    0     0                       0.0669355    0.01243  81.4%     -   18s
+H    0     0                       0.0653802    0.01243  81.0%     -   18s
+     0     0    0.01371    0  147    0.06538    0.01371  79.0%     -   18s
+     0     0    0.01383    0  147    0.06538    0.01383  78.8%     -   18s
+H    0     0                       0.0326912    0.01383  57.7%     -   18s
+     0     0    0.02227    0   18    0.03269    0.02227  31.9%     -   18s
+H    0     1                       0.0278119    0.02227  19.9%     -   18s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (17283 simplex iterations) in 18.88 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0278119 0.0326912 0.0653802 ... 0.9278
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.781187011664e-02, best bound 2.781187011664e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.985227
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 1.552549e-02, 10377 iterations, 4.22 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01553    0 2638    0.98523    0.01553  98.4%     -    5s
+H    0     0                       0.0796651    0.01553  80.5%     -    5s
+H    0     0                       0.0743026    0.01553  79.1%     -    7s
+     0     0    0.03986    0  950    0.07430    0.03986  46.3%     -    8s
+     0     0    0.06197    0   80    0.07430    0.06197  16.6%     -    8s
+     0     0    0.07220    0   27    0.07430    0.07220  2.83%     -    8s
+
+Cutting planes:
+  Gomory: 2
+
+Explored 1 nodes (11425 simplex iterations) in 8.53 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0743026 0.0743026 0.0796651 0.985227 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.430255437413e-02, best bound 7.430255437413e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.9278
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 5.240729e-03, 11306 iterations, 3.58 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00524    0 1854    0.92780    0.00524  99.4%     -    4s
+H    0     0                       0.0138872    0.00524  62.3%     -    5s
+H    0     0                       0.0138676    0.00524  62.2%     -    6s
+     0     0    0.01005    0  420    0.01387    0.01005  27.5%     -    6s
+
+Explored 1 nodes (11673 simplex iterations) in 7.13 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0138676 0.0138872 0.9278 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.386756118086e-02, best bound 1.386756118086e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.987302
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 8.468053e-03, 10865 iterations, 3.27 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00847    0 2061    0.98730    0.00847  99.1%     -    4s
+H    0     0                       0.0241999    0.00847  65.0%     -    4s
+     0     0    0.01548    0  687    0.02420    0.01548  36.0%     -    6s
+     0     0    0.02277    0   14    0.02420    0.02277  5.89%     -    7s
+H    0     0                       0.0240764    0.02277  5.41%     -    7s
+H    0     0                       0.0229880    0.02277  0.93%     -    7s
+     0     0 infeasible    0         0.02299    0.02299  0.00%     -    7s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (11284 simplex iterations) in 7.13 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.022988 0.0240764 0.0241999 0.987302 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.298804449823e-02, best bound 2.298804449823e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4518 rows and 3008 columns
+Presolve time: 0.76s
+Presolved: 10253 rows, 6575 columns, 45238 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3608 continuous, 2967 integer (2967 binary)
+
+Root relaxation: objective 1.058339e-02, 7839 iterations, 1.65 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01058    0 1467    0.50000    0.01058  97.9%     -    3s
+H    0     0                       0.1019514    0.01058  89.6%     -    3s
+H    0     0                       0.0339652    0.01058  68.8%     -    4s
+     0     0    0.01467    0  682    0.03397    0.01467  56.8%     -    4s
+     0     0    0.02198    0  126    0.03397    0.02198  35.3%     -    5s
+     0     0    0.02693    0  133    0.03397    0.02693  20.7%     -    5s
+H    0     0                       0.0325141    0.02693  17.2%     -    5s
+     0     0    0.02693    0  111    0.03251    0.02693  17.2%     -    5s
+     0     0    0.02725    0   93    0.03251    0.02725  16.2%     -    5s
+     0     0    0.02725    0  109    0.03251    0.02725  16.2%     -    5s
+H    0     0                       0.0302024    0.02725  9.78%     -    5s
+H    0     0                       0.0301992    0.02725  9.77%     -    5s
+     0     0    0.02725    0  118    0.03020    0.02725  9.77%     -    5s
+H    0     0                       0.0293682    0.02725  7.21%     -    5s
+     0     0    0.02762    0   74    0.02937    0.02762  5.97%     -    5s
+H    0     0                       0.0293682    0.02762  5.97%     -    5s
+H    0     0                       0.0288274    0.02762  4.20%     -    5s
+     0     0 infeasible    0         0.02883    0.02883  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+
+Explored 1 nodes (9039 simplex iterations) in 5.66 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 10: 0.0288274 0.0293682 0.0293682 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.882736040348e-02, best bound 2.882736040348e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4485 rows and 2985 columns
+Presolve time: 0.75s
+Presolved: 10286 rows, 6598 columns, 45385 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3618 continuous, 2980 integer (2980 binary)
+
+Root relaxation: objective 6.382893e-03, 6811 iterations, 1.69 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00638    0 1443    0.50000    0.00638  98.7%     -    3s
+H    0     0                       0.0162987    0.00638  60.8%     -    3s
+     0     0    0.01099    0  524    0.01630    0.01099  32.5%     -    4s
+     0     0    0.01412    0   16    0.01630    0.01412  13.4%     -    4s
+H    0     0                       0.0156134    0.01412  9.55%     -    4s
+*    0     0               0       0.0152585    0.01526  0.00%     -    4s
+
+Explored 1 nodes (7333 simplex iterations) in 4.71 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0152585 0.0156134 0.0162987 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.525846608788e-02, best bound 1.525846608788e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4070 rows and 2704 columns
+Presolve time: 0.76s
+Presolved: 10701 rows, 6879 columns, 47468 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3769 continuous, 3110 integer (3110 binary)
+
+Root relaxation: objective 1.301389e-02, 7646 iterations, 1.97 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01315    0 1914    0.50000    0.01315  97.4%     -    4s
+H    0     0                       0.0546912    0.01315  76.0%     -    4s
+H    0     0                       0.0546771    0.01315  76.0%     -    6s
+H    0     0                       0.0530961    0.01315  75.2%     -    6s
+     0     0    0.02701    0  697    0.05310    0.02701  49.1%     -    6s
+     0     0    0.04094    0  152    0.05310    0.04094  22.9%     -    7s
+H    0     0                       0.0500071    0.04094  18.1%     -    7s
+H    0     0                       0.0499818    0.04094  18.1%     -    7s
+     0     0    0.04652    0   24    0.04998    0.04652  6.93%     -    7s
+H    0     0                       0.0481561    0.04652  3.40%     -    7s
+H    0     0                       0.0465266    0.04652  0.02%     -    7s
+     0     0 infeasible    0         0.04653    0.04653  0.00%     -    7s
+
+Cutting planes:
+  Implied bound: 4
+  MIR: 1
+  StrongCG: 1
+  Flow cover: 3
+
+Explored 1 nodes (8776 simplex iterations) in 7.33 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0465266 0.0481561 0.0499818 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.652656271536e-02, best bound 4.652656271536e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4432 rows and 2950 columns
+Presolve time: 0.79s
+Presolved: 10339 rows, 6633 columns, 45751 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3636 continuous, 2997 integer (2997 binary)
+
+Root relaxation: objective 4.688941e-03, 6963 iterations, 1.43 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00469    0 1154    0.50000    0.00469  99.1%     -    2s
+H    0     0                       0.0086394    0.00469  45.7%     -    2s
+H    0     0                       0.0081105    0.00469  42.2%     -    3s
+     0     0 infeasible    0         0.00811    0.00811  0.00%     -    3s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (7331 simplex iterations) in 3.98 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.00811045 0.0086394 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.110450592844e-03, best bound 8.110450592844e-03, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-08, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.74s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.131479e-02, 7673 iterations, 2.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01144    0 1878    0.50000    0.01144  97.7%     -    4s
+H    0     0                       0.0450990    0.01144  74.6%     -    5s
+H    0     0                       0.0435368    0.01144  73.7%     -    6s
+     0     0    0.03976    0  306    0.04354    0.03976  8.68%     -    6s
+H    0     1                       0.0432042    0.03976  7.97%     -    6s
+
+Explored 1 nodes (8045 simplex iterations) in 6.77 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0432042 0.0435368 0.045099 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.320418119826e-02, best bound 4.320418119826e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.522568
+
+Presolve removed 4954 rows and 3330 columns
+Presolve time: 0.83s
+Presolved: 9817 rows, 6253 columns, 43042 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3435 continuous, 2818 integer (2818 binary)
+
+Root relaxation: objective 1.260153e-02, 7659 iterations, 1.71 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01260    0 1906    0.52257    0.01260  97.6%     -    3s
+H    0     0                       0.1261240    0.01260  90.0%     -    3s
+H    0     0                       0.0798204    0.01260  84.2%     -    4s
+     0     0    0.02770    0  477    0.07982    0.02770  65.3%     -    4s
+     0     0    0.02856    0   63    0.07982    0.02856  64.2%     -    4s
+H    0     0                       0.0770601    0.02856  62.9%     -    4s
+H    0     0                       0.0756400    0.02856  62.2%     -    4s
+H    0     0                       0.0591008    0.02856  51.7%     -    4s
+H    0     0                       0.0499344    0.02856  42.8%     -    4s
+     0     0     cutoff    0         0.04993    0.04993  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (8310 simplex iterations) in 4.94 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0499344 0.0591008 0.07564 ... 0.522568
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.993438498709e-02, best bound 4.993438498709e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.688838
+
+Presolve removed 1204 rows and 824 columns
+Presolve time: 0.64s
+Presolved: 13567 rows, 8759 columns, 61572 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4813 continuous, 3946 integer (3946 binary)
+
+Root relaxation: objective 9.332285e-03, 9735 iterations, 3.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00933    0 2059    0.68884    0.00933  98.6%     -    4s
+H    0     0                       0.5970108    0.00933  98.4%     -    6s
+     0     0    0.00943    0 2047    0.59701    0.00943  98.4%     -    8s
+H    0     0                       0.0312087    0.00943  69.8%     -    8s
+     0     0    0.01543    0  651    0.03121    0.01543  50.5%     -   10s
+     0     0    0.02496    0   71    0.03121    0.02496  20.0%     -   10s
+H    0     0                       0.0289958    0.02496  13.9%     -   10s
+     0     0    0.02858    0   62    0.02900    0.02858  1.43%     -   10s
+     0     0    0.02899    0   69    0.02900    0.02899  0.03%     -   10s
+     0     0    0.02899    0   67    0.02900    0.02899  0.03%     -   10s
+     0     0 infeasible    0         0.02900    0.02900  0.00%     -   10s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+
+Explored 1 nodes (10421 simplex iterations) in 10.70 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0289958 0.0312087 0.597011 0.688838 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.899581511808e-02, best bound 2.899581511808e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4619 rows and 3078 columns
+Presolve time: 0.77s
+Presolved: 10152 rows, 6505 columns, 44723 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3570 continuous, 2935 integer (2935 binary)
+
+Root relaxation: objective 1.104179e-02, 6624 iterations, 1.48 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01104    0 1291    0.50000    0.01104  97.8%     -    3s
+H    0     0                       0.0330622    0.01104  66.6%     -    3s
+     0     0    0.01984    0  877    0.03306    0.01984  40.0%     -    4s
+     0     0    0.03001    0   58    0.03306    0.03001  9.22%     -    4s
+H    0     0                       0.0319699    0.03001  6.12%     -    4s
+H    0     0                       0.0307473    0.03001  2.39%     -    4s
+     0     0     cutoff    0         0.03075    0.03075  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (7496 simplex iterations) in 4.93 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0307473 0.0319699 0.0330622 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.074734023218e-02, best bound 3.074734023218e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4874 rows and 3249 columns
+Presolve time: 0.79s
+Presolved: 9897 rows, 6334 columns, 43553 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3478 continuous, 2856 integer (2856 binary)
+
+Root relaxation: objective 7.216428e-03, 7046 iterations, 1.39 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00722    0 1222    0.50000    0.00722  98.6%     -    2s
+H    0     0                       0.0225603    0.00722  68.0%     -    2s
+H    0     0                       0.0195666    0.00722  63.1%     -    3s
+     0     0    0.01835    0  465    0.01957    0.01835  6.20%     -    4s
+
+Explored 1 nodes (7284 simplex iterations) in 4.15 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0195666 0.0225603 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.956659445222e-02, best bound 1.956659445222e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.716762
+
+Presolve removed 1016 rows and 696 columns
+Presolve time: 0.62s
+Presolved: 13755 rows, 8887 columns, 62510 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4883 continuous, 4004 integer (4004 binary)
+
+Root relaxation: objective 6.042145e-04, 7557 iterations, 1.82 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00060    0 1067    0.71676    0.00060   100%     -    3s
+H    0     0                       0.5000000    0.00060   100%     -    3s
+H    0     0                       0.0036367    0.00060  83.4%     -    3s
+     0     0 infeasible    0         0.00364    0.00364  0.00%     -    4s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (8417 simplex iterations) in 4.86 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.00363672 0.5 0.716762 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.636718242578e-03, best bound 3.636718242578e-03, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.62292
+
+Presolve removed 1663 rows and 1132 columns
+Presolve time: 0.66s
+Presolved: 13108 rows, 8451 columns, 59315 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4646 continuous, 3805 integer (3805 binary)
+
+Root relaxation: objective 1.090936e-03, 9153 iterations, 1.92 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00109    0 1622    0.62292    0.00109   100%     -    3s
+H    0     0                       0.0365545    0.00109  97.0%     -    3s
+H    0     0                       0.0102598    0.00109  89.4%     -    3s
+H    0     0                       0.0023779    0.00109  54.1%     -    3s
+     0     0 infeasible    0         0.00238    0.00238  0.00%     -    5s
+
+Cutting planes:
+  Cover: 1
+  MIR: 1
+
+Explored 1 nodes (9275 simplex iterations) in 5.12 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.00237795 0.0102598 0.0365545 0.62292 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.377947443031e-03, best bound 2.377947443031e-03, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.290133
+
+Presolve removed 8048 rows and 5323 columns
+Presolve time: 0.88s
+Presolved: 6723 rows, 4260 columns, 28279 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 2307 continuous, 1953 integer (1953 binary)
+
+Root relaxation: objective 1.679821e-02, 5170 iterations, 0.82 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01680    0 1169    0.29013    0.01680  94.2%     -    2s
+     0     0    0.01720    0 1153    0.29013    0.01720  94.1%     -    3s
+H    0     0                       0.0508928    0.01720  66.2%     -    3s
+H    0     0                       0.0493172    0.01720  65.1%     -    3s
+     0     0    0.02761    0  422    0.04932    0.02761  44.0%     -    4s
+     0     0    0.03770    0   99    0.04932    0.03770  23.6%     -    4s
+H    0     0                       0.0472448    0.03770  20.2%     -    4s
+H    0     0                       0.0466715    0.03770  19.2%     -    4s
+     0     0    0.04336    0   52    0.04667    0.04336  7.11%     -    4s
+     0     0     cutoff    0         0.04667    0.04667  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+
+Explored 1 nodes (6041 simplex iterations) in 4.51 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0466715 0.0472448 0.0493172 ... 0.290133
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.667149559763e-02, best bound 4.667149559763e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.734365
+
+Presolve removed 963 rows and 658 columns
+Presolve time: 0.68s
+Presolved: 13808 rows, 8925 columns, 62782 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4902 continuous, 4023 integer (4023 binary)
+
+Root relaxation: objective 1.007309e-02, 10712 iterations, 3.71 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01007    0 2612    0.73437    0.01007  98.6%     -    5s
+H    0     0                       0.0330556    0.01007  69.5%     -    5s
+     0     0    0.02156    0  477    0.03306    0.02156  34.8%     -    7s
+     0     0    0.02769    0   10    0.03306    0.02769  16.2%     -    7s
+H    0     0                       0.0292999    0.02769  5.48%     -    7s
+     0     0 infeasible    0         0.02930    0.02930  0.00%     -    7s
+
+Cutting planes:
+  MIR: 3
+
+Explored 1 nodes (11223 simplex iterations) in 8.00 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0292999 0.0330556 0.0330556 0.734365 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.929992460623e-02, best bound 2.929992460623e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [4e-02, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Found heuristic solution: objective 0.5000000
+
+Root relaxation: objective 6.419164e-03, 9571 iterations, 3.12 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00657    0 2023    0.50000    0.00657  98.7%     -    6s
+H    0     0                       0.0291438    0.00657  77.5%     -    6s
+H    0     0                       0.0248333    0.00657  73.6%     -    8s
+     0     0    0.02468    0   94    0.02483    0.02468  0.63%     -    9s
+
+Explored 1 nodes (10274 simplex iterations) in 10.08 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0248333 0.0291438 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.483328059076e-02, best bound 2.483328059076e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.22s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 7.228558e-03, 9942 iterations, 3.51 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00723    0 1880          -    0.00723      -     -    4s
+H    0     0                       0.0199208    0.00723  63.7%     -    4s
+     0     0    0.01682    0  654    0.01992    0.01682  15.6%     -    6s
+H    0     0                       0.0195658    0.01682  14.0%     -    6s
+
+Explored 1 nodes (10361 simplex iterations) in 6.67 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0195658 0.019848 0.0199208 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.956583874245e-02, best bound 1.956583874245e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.533119
+
+Presolve removed 3408 rows and 2270 columns
+Presolve time: 0.74s
+Presolved: 11363 rows, 7313 columns, 50651 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4009 continuous, 3304 integer (3304 binary)
+
+Root relaxation: objective 1.288936e-02, 7946 iterations, 2.41 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01289    0 2218    0.53312    0.01289  97.6%     -    4s
+H    0     0                       0.0717623    0.01289  82.0%     -    4s
+     0     0    0.02755    0  710    0.07176    0.02755  61.6%     -    6s
+     0     0    0.04122    0  116    0.07176    0.04122  42.6%     -    6s
+H    0     0                       0.0710759    0.04122  42.0%     -    6s
+H    0     0                       0.0677184    0.04122  39.1%     -    6s
+H    0     0                       0.0643098    0.04229  34.2%     -    6s
+H    0     0                       0.0641249    0.04229  34.1%     -    6s
+     0     0     cutoff    0         0.06412    0.06412  0.00%     -    6s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 4
+  MIR: 1
+
+Explored 1 nodes (8930 simplex iterations) in 6.49 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0641249 0.0643098 0.0677184 ... 0.533119
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.412486023280e-02, best bound 6.412486023280e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.72s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.185252e-02, 7123 iterations, 2.10 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01199    0 1856    0.50000    0.01199  97.6%     -    4s
+H    0     0                       0.0579519    0.01199  79.3%     -    4s
+     0     0    0.02174    0  477    0.05795    0.02174  62.5%     -    5s
+     0     0    0.02976    0  105    0.05795    0.02976  48.7%     -    6s
+H    0     0                       0.0502048    0.02976  40.7%     -    6s
+     0     0    0.03350    0   97    0.05020    0.03350  33.3%     -    6s
+     0     0    0.03958    0   43    0.05020    0.03958  21.2%     -    6s
+H    0     0                       0.0500012    0.03958  20.8%     -    6s
+H    0     0                       0.0475426    0.03958  16.8%     -    6s
+     0     0    0.04383    0   13    0.04754    0.04383  7.80%     -    6s
+H    0     0                       0.0468521    0.04383  6.45%     -    6s
+H    0     0                       0.0466425    0.04383  6.03%     -    6s
+     0     0     cutoff    0         0.04664    0.04664  0.00%     -    6s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (8368 simplex iterations) in 6.54 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 9: 0.0466425 0.0468521 0.0475426 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.664245216679e-02, best bound 4.664245216679e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.622137
+
+Presolve removed 1785 rows and 1218 columns
+Presolve time: 0.68s
+Presolved: 12986 rows, 8365 columns, 58692 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4600 continuous, 3765 integer (3765 binary)
+
+Root relaxation: objective 8.756562e-03, 9256 iterations, 2.76 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00876    0 2063    0.62214    0.00876  98.6%     -    4s
+H    0     0                       0.0275269    0.00876  68.2%     -    4s
+H    0     0                       0.0271163    0.00876  67.7%     -    6s
+     0     0    0.01917    0  763    0.02712    0.01917  29.3%     -    6s
+     0     0    0.02590    0    6    0.02712    0.02590  4.50%     -    7s
+H    0     0                       0.0270492    0.02590  4.26%     -    7s
+     0     0     cutoff    0         0.02705    0.02705  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (9836 simplex iterations) in 7.03 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0270492 0.0271163 0.0271163 ... 0.622137
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.704921615041e-02, best bound 2.704921615041e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.116074
+
+Presolve removed 11244 rows and 7387 columns
+Presolve time: 0.81s
+Presolved: 3527 rows, 2196 columns, 13761 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 1177 continuous, 1019 integer (1019 binary)
+
+Root relaxation: objective 7.389497e-03, 2593 iterations, 0.25 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00739    0  402    0.11607    0.00739  93.6%     -    1s
+H    0     0                       0.0289015    0.00739  74.4%     -    1s
+     0     0    0.00911    0  316    0.02890    0.00911  68.5%     -    1s
+     0     0    0.01301    0   93    0.02890    0.01301  55.0%     -    1s
+H    0     0                       0.0195331    0.01301  33.4%     -    1s
+     0     0    0.01530    0   34    0.01953    0.01530  21.7%     -    1s
+     0     0    0.01721    0    6    0.01953    0.01721  11.9%     -    1s
+H    0     0                       0.0181706    0.01721  5.28%     -    1s
+     0     0 infeasible    0         0.01817    0.01817  0.00%     -    1s
+
+Explored 1 nodes (3276 simplex iterations) in 1.97 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0181706 0.0195331 0.0195331 ... 0.116074
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.817056201465e-02, best bound 1.817056201465e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.72s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.030311e-02, 7105 iterations, 1.86 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01040    0 1557    0.50000    0.01040  97.9%     -    4s
+H    0     0                       0.1955959    0.01040  94.7%     -    4s
+H    0     0                       0.0302063    0.01040  65.6%     -    4s
+     0     0    0.02990    0  130    0.03021    0.02990  1.03%     -    5s
+
+Explored 1 nodes (7701 simplex iterations) in 5.99 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0302063 0.195596 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.020628246894e-02, best bound 3.020628246894e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.75s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.010491e-02, 7385 iterations, 1.46 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01018    0 1408    0.50000    0.01018  98.0%     -    3s
+H    0     0                       0.0813644    0.01018  87.5%     -    4s
+H    0     0                       0.0288586    0.01018  64.7%     -    5s
+     0     0    0.01915    0  208    0.02886    0.01915  33.7%     -    5s
+     0     0    0.01915    0  176    0.02886    0.01915  33.6%     -    5s
+     0     0    0.02064    0   29    0.02886    0.02064  28.5%     -    6s
+H    0     0                       0.0284993    0.02064  27.6%     -    6s
+H    0     0                       0.0272874    0.02064  24.4%     -    6s
+     0     0    0.02369    0    9    0.02729    0.02369  13.2%     -    6s
+H    0     0                       0.0269238    0.02369  12.0%     -    6s
+H    0     0                       0.0250364    0.02369  5.36%     -    6s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+  Clique: 2
+  MIR: 1
+  GUB cover: 1
+
+Explored 1 nodes (7976 simplex iterations) in 6.08 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0250364 0.0269238 0.0272874 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.503635534940e-02, best bound 2.503635534940e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4048 rows and 2690 columns
+Presolve time: 0.72s
+Presolved: 10723 rows, 6893 columns, 47579 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3777 continuous, 3116 integer (3116 binary)
+
+Root relaxation: objective 1.221692e-02, 7925 iterations, 1.75 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01233    0 2011    0.50000    0.01233  97.5%     -    4s
+H    0     0                       0.0479324    0.01233  74.3%     -    4s
+H    0     0                       0.0473915    0.01233  74.0%     -    5s
+H    0     0                       0.0439286    0.01233  71.9%     -    5s
+     0     0    0.02708    0  552    0.04393    0.02708  38.4%     -    5s
+     0     0    0.03128    0   47    0.04393    0.03128  28.8%     -    5s
+H    0     0                       0.0398094    0.03128  21.4%     -    5s
+H    0     0                       0.0381095    0.03128  17.9%     -    5s
+     0     0    0.03276    0   36    0.03811    0.03276  14.0%     -    5s
+H    0     0                       0.0376442    0.03276  13.0%     -    5s
+     0     0     cutoff    0         0.03764    0.03764  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+  MIR: 2
+
+Explored 1 nodes (8603 simplex iterations) in 5.98 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 7: 0.0376442 0.0381095 0.0398094 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.764424682857e-02, best bound 3.764424682857e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.72s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 5.939536e-03, 6966 iterations, 1.98 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00598    0 1562    0.50000    0.00598  98.8%     -    4s
+H    0     0                       0.1625621    0.00598  96.3%     -    4s
+H    0     0                       0.0200811    0.00598  70.2%     -    4s
+     0     0 infeasible    0         0.02008    0.02008  0.00%     -    5s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (7307 simplex iterations) in 5.41 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0200811 0.162562 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.008106833575e-02, best bound 2.008106833575e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.536414
+
+Presolve removed 3379 rows and 2257 columns
+Presolve time: 0.72s
+Presolved: 11392 rows, 7326 columns, 50832 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4021 continuous, 3305 integer (3305 binary)
+
+Root relaxation: objective 8.430791e-03, 7896 iterations, 1.63 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00844    0 1617    0.53641    0.00844  98.4%     -    3s
+H    0     0                       0.0278514    0.00844  69.7%     -    4s
+H    0     0                       0.0247122    0.00844  65.8%     -    5s
+     0     0    0.01623    0  553    0.02471    0.01623  34.3%     -    5s
+     0     0    0.02241    0   15    0.02471    0.02241  9.31%     -    5s
+H    0     0                       0.0241376    0.02241  7.15%     -    5s
+H    0     0                       0.0239920    0.02241  6.59%     -    5s
+H    0     0                       0.0238621    0.02241  6.08%     -    5s
+     0     0    0.02301    0    1    0.02386    0.02301  3.58%     -    5s
+H    0     0                       0.0231320    0.02301  0.53%     -    5s
+     0     0 infeasible    0         0.02313    0.02313  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+
+Explored 1 nodes (8346 simplex iterations) in 5.88 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 7: 0.023132 0.0238621 0.023992 ... 0.536414
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.313195266432e-02, best bound 2.313195266432e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-01, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 1.049136e-02, 11124 iterations, 2.92 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01049    0 2415          -    0.01049      -     -    3s
+H    0     0                       0.0277630    0.01049  62.2%     -    4s
+     0     0    0.02145    0  276    0.02776    0.02145  22.8%     -    6s
+
+Explored 1 nodes (11546 simplex iterations) in 6.30 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 1: 0.027763 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.776300583571e-02, best bound 2.776300583571e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+MIP start did not produce a new incumbent solution
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 5.918042e-03, 9788 iterations, 3.58 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00592    0 1856          -    0.00592      -     -    4s
+H    0     0                       0.0127718    0.00592  53.7%     -    5s
+     0     0    0.01142    0  409    0.01277    0.01142  10.5%     -    6s
+
+Explored 1 nodes (9976 simplex iterations) in 6.37 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 1: 0.0127718 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.277178313781e-02, best bound 1.277178313781e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.9278
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   12023    4.4315947e-03   3.075579e+00   0.000000e+00      5s
+   12281    2.9627176e-03   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 2.962718e-03, 12281 iterations, 4.95 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00296    0 2601    0.92780    0.00296   100%     -    6s
+H    0     0                       0.0147386    0.00296  79.9%     -    6s
+     0     0    0.00587    0  293    0.01474    0.00587  60.2%     -    9s
+     0     0    0.00629    0   22    0.01474    0.00629  57.3%     -    9s
+H    0     0                       0.0138401    0.00629  54.6%     -    9s
+H    0     0                       0.0114791    0.00629  45.2%     -    9s
+     0     0     cutoff    0         0.01148    0.01148  0.00%     -    9s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (12678 simplex iterations) in 9.37 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0114791 0.0138401 0.0147386 ... 0.9278
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.147906163698e-02, best bound 1.147906163698e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.987302
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.22s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 1.670432e-02, 11374 iterations, 4.47 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01670    0 3284    0.98730    0.01670  98.3%     -    5s
+H    0     0                       0.0785395    0.01670  78.7%     -    6s
+     0     0    0.04344    0  846    0.07854    0.04344  44.7%     -    9s
+     0     0    0.06749    0   60    0.07854    0.06749  14.1%     -    9s
+H    0     0                       0.0777013    0.06749  13.1%     -    9s
+H    0     0                       0.0769702    0.06749  12.3%     -    9s
+     0     0     cutoff    0         0.07697    0.07697  0.00%     -    9s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (11975 simplex iterations) in 9.55 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0769702 0.0777013 0.0785395 0.987302 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.697024383333e-02, best bound 7.697024383333e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.620945
+
+Presolve removed 1663 rows and 1132 columns
+Presolve time: 0.66s
+Presolved: 13108 rows, 8451 columns, 59315 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4646 continuous, 3805 integer (3805 binary)
+
+Root relaxation: objective 6.126900e-03, 8757 iterations, 2.25 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00613    0 1764    0.62095    0.00613  99.0%     -    3s
+H    0     0                       0.0138947    0.00613  55.9%     -    3s
+     0     0    0.00946    0  485    0.01389    0.00946  31.9%     -    5s
+
+Explored 1 nodes (9043 simplex iterations) in 5.61 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 2: 0.0138947 0.620945 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.389471877341e-02, best bound 1.389471877341e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.9278
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 7.938815e-03, 11942 iterations, 3.90 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00794    0 2541    0.92780    0.00794  99.1%     -    5s
+H    0     0                       0.1156462    0.00794  93.1%     -    5s
+H    0     0                       0.0571022    0.00794  86.1%     -    7s
+H    0     0                       0.0500277    0.00794  84.1%     -    7s
+     0     0    0.01357    0  916    0.05003    0.01357  72.9%     -    7s
+     0     0    0.01505    0  212    0.05003    0.01505  69.9%     -    8s
+     0     0    0.01515    0  210    0.05003    0.01515  69.7%     -    8s
+H    0     0                       0.0373174    0.01515  59.4%     -    9s
+H    0     0                       0.0364972    0.01515  58.5%     -    9s
+     0     0    0.02260    0  184    0.03650    0.02260  38.1%     -    9s
+     0     0    0.02436    0  123    0.03650    0.02436  33.3%     -    9s
+H    0     0                       0.0364031    0.02436  33.1%     -    9s
+H    0     0                       0.0339435    0.02436  28.2%     -    9s
+H    0     0                       0.0337859    0.02436  27.9%     -    9s
+H    0     0                       0.0335925    0.02436  27.5%     -    9s
+     0     0     cutoff    0         0.03359    0.03359  0.00%     -    9s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (13964 simplex iterations) in 9.71 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 10: 0.0335925 0.0337859 0.0339435 ... 0.115646
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.359246484973e-02, best bound 3.359246484973e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.985292
+
+Presolve removed 46 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 14725 rows, 9583 columns, 67352 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+
+Root relaxation: objective 9.983460e-03, 11090 iterations, 3.68 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00998    0 2219    0.98529    0.00998  99.0%     -    4s
+H    0     0                       0.0377254    0.00998  73.5%     -    4s
+H    0     0                       0.0272816    0.00998  63.4%     -    6s
+     0     0    0.02024    0  791    0.02728    0.02024  25.8%     -    7s
+     0     0    0.02658    0   13    0.02728    0.02658  2.58%     -    7s
+H    0     0                       0.0270248    0.02658  1.65%     -    7s
+H    0     0                       0.0269283    0.02658  1.30%     -    7s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 2
+
+Explored 1 nodes (11696 simplex iterations) in 7.73 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0269283 0.0270248 0.0272816 ... 0.985292
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.692825856372e-02, best bound 2.692825856372e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.708149
+
+Presolve removed 1016 rows and 696 columns
+Presolve time: 0.63s
+Presolved: 13755 rows, 8887 columns, 62510 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4883 continuous, 4004 integer (4004 binary)
+
+Root relaxation: objective 1.476402e-02, 10500 iterations, 3.83 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01476    0 3028    0.70815    0.01476  97.9%     -    5s
+H    0     0                       0.1208713    0.01476  87.8%     -    5s
+H    0     0                       0.0644182    0.01476  77.1%     -    7s
+     0     0    0.03883    0  529    0.06442    0.03883  39.7%     -    8s
+     0     0    0.05752    0    5    0.06442    0.05752  10.7%     -    8s
+H    0     0                       0.0581410    0.05752  1.07%     -    8s
+     0     0     cutoff    0         0.05814    0.05814  0.00%     -    8s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (10973 simplex iterations) in 8.80 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.058141 0.0644182 0.0644182 ... 0.708149
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.814097692179e-02, best bound 5.814097692179e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.676067
+
+Presolve removed 1204 rows and 824 columns
+Presolve time: 0.65s
+Presolved: 13567 rows, 8759 columns, 61572 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4813 continuous, 3946 integer (3946 binary)
+
+Root relaxation: objective 9.099290e-03, 10802 iterations, 3.33 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00910    0 2531    0.67607    0.00910  98.7%     -    4s
+H    0     0                       0.1266370    0.00910  92.8%     -    4s
+H    0     0                       0.0696298    0.00910  86.9%     -    6s
+H    0     0                       0.0573625    0.00910  84.1%     -    6s
+     0     0    0.01293    0  736    0.05736    0.01293  77.5%     -    7s
+     0     0    0.01695    0  201    0.05736    0.01695  70.4%     -    8s
+     0     0    0.01698    0  208    0.05736    0.01698  70.4%     -    8s
+     0     0    0.01698    0  208    0.05736    0.01698  70.4%     -    8s
+H    0     0                       0.0572016    0.01698  70.3%     -    8s
+     0     2    0.01722    0  230    0.05720    0.01722  69.9%     -    9s
+H   15    22                       0.0532467    0.01833  65.6%  52.5    9s
+H   31    20                       0.0403627    0.02616  35.2%  59.6    9s
+*   70    18               9       0.0388156    0.03605  7.12%  44.9    9s
+H   73     8                       0.0360565    0.03605  0.01%  43.2    9s
+
+Cutting planes:
+  Implied bound: 3
+
+Explored 87 nodes (15444 simplex iterations) in 9.67 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 9: 0.0360565 0.0388156 0.0403627 ... 0.676067
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.605649023673e-02, best bound 3.605501256743e-02, gap 0.0041%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4736 rows and 3154 columns
+Presolve time: 0.78s
+Presolved: 10035 rows, 6429 columns, 44175 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3530 continuous, 2899 integer (2899 binary)
+
+Root relaxation: objective 7.660202e-03, 7295 iterations, 1.53 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00766    0 1612    0.50000    0.00766  98.5%     -    2s
+H    0     0                       0.0214972    0.00766  64.4%     -    3s
+H    0     0                       0.0202853    0.00766  62.2%     -    3s
+     0     0 infeasible    0         0.02029    0.02029  0.00%     -    4s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (7475 simplex iterations) in 4.11 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0202853 0.0214972 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.028530485127e-02, best bound 2.028530485127e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.73s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.196239e-02, 7612 iterations, 2.18 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01209    0 1646    0.50000    0.01209  97.6%     -    5s
+H    0     0                       0.0527037    0.01209  77.1%     -    5s
+H    0     0                       0.0402081    0.01209  69.9%     -    6s
+     0     0    0.02716    0  476    0.04021    0.02716  32.4%     -    7s
+     0     0    0.03386    0   31    0.04021    0.03386  15.8%     -    7s
+H    0     0                       0.0357073    0.03386  5.18%     -    7s
+     0     0 infeasible    0         0.03571    0.03571  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (8422 simplex iterations) in 7.32 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0357073 0.0402081 0.0527037 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.570733483920e-02, best bound 3.570733483920e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.581165
+
+Presolve removed 2536 rows and 1707 columns
+Presolve time: 0.69s
+Presolved: 12235 rows, 7876 columns, 54880 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4323 continuous, 3553 integer (3553 binary)
+
+Root relaxation: objective 6.395927e-03, 8225 iterations, 2.17 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00640    0 1306    0.58116    0.00640  98.9%     -    3s
+H    0     0                       0.4882990    0.00640  98.7%     -    3s
+H    0     0                       0.0671261    0.00640  90.5%     -    5s
+     0     0    0.00682    0  683    0.06713    0.00682  89.8%     -    6s
+     0     0    0.00682    0  683    0.06713    0.00682  89.8%     -    6s
+     0     0    0.00797    0  283    0.06713    0.00797  88.1%     -    8s
+     0     0    0.00819    0  287    0.06713    0.00819  87.8%     -    8s
+     0     0    0.00819    0  287    0.06713    0.00819  87.8%     -    8s
+     0     0    0.00823    0  298    0.06713    0.00823  87.7%     -    9s
+H    0     0                       0.0493791    0.00823  83.3%     -    9s
+H    0     0                       0.0211183    0.00823  61.0%     -    9s
+     0     0    0.01190    0  236    0.02112    0.01190  43.6%     -    9s
+     0     0    0.01516    0   37    0.02112    0.01516  28.2%     -    9s
+H    0     0                       0.0199653    0.01516  24.1%     -    9s
+H    0     0                       0.0196483    0.01516  22.8%     -    9s
+     0     0    0.01597    0   46    0.01965    0.01597  18.7%     -    9s
+H    0     0                       0.0190750    0.01597  16.3%     -    9s
+     0     0    0.01632    0   44    0.01907    0.01632  14.5%     -    9s
+H    0     0                       0.0174918    0.01632  6.71%     -    9s
+
+Cutting planes:
+  Implied bound: 1
+
+Explored 1 nodes (10347 simplex iterations) in 10.03 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 10: 0.0174918 0.019075 0.0196483 ... 0.581165
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.749184871721e-02, best bound 1.749184871721e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.72s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.321075e-02, 7778 iterations, 1.76 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01334    0 1486    0.50000    0.01334  97.3%     -    4s
+H    0     0                       0.0526480    0.01334  74.7%     -    5s
+     0     0    0.02050    0 1106    0.05265    0.02050  61.1%     -    5s
+     0     0    0.02367    0  226    0.05265    0.02367  55.0%     -    6s
+H    0     0                       0.0522276    0.02367  54.7%     -    6s
+     0     0    0.02552    0  247    0.05223    0.02552  51.1%     -    6s
+H    0     0                       0.0470508    0.02552  45.8%     -    6s
+     0     0 infeasible    0         0.04705    0.04705  0.00%     -    6s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 2
+  MIR: 1
+
+Explored 1 nodes (9435 simplex iterations) in 6.60 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0470508 0.0522276 0.052648 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.705077165657e-02, best bound 4.705077165657e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.556369
+
+Presolve removed 3250 rows and 2180 columns
+Presolve time: 0.74s
+Presolved: 11521 rows, 7403 columns, 51383 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4065 continuous, 3338 integer (3338 binary)
+
+Root relaxation: objective 6.435950e-03, 8077 iterations, 1.81 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00644    0 1721    0.55637    0.00644  98.8%     -    3s
+H    0     0                       0.0160841    0.00644  60.0%     -    3s
+     0     0    0.01312    0  363    0.01608    0.01312  18.4%     -    4s
+
+Explored 1 nodes (8315 simplex iterations) in 4.74 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0160841 0.0160841 0.556369 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.608408335725e-02, best bound 1.608408335725e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4497 rows and 2994 columns
+Presolve time: 0.76s
+Presolved: 10274 rows, 6589 columns, 45341 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3615 continuous, 2974 integer (2974 binary)
+
+Root relaxation: objective 1.015106e-02, 7297 iterations, 1.47 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01015    0 1456    0.50000    0.01015  98.0%     -    2s
+H    0     0                       0.0392355    0.01015  74.1%     -    3s
+     0     0    0.01489    0  521    0.03924    0.01489  62.0%     -    4s
+     0     0    0.02153    0  151    0.03924    0.02153  45.1%     -    4s
+H    0     0                       0.0374499    0.02153  42.5%     -    4s
+H    0     0                       0.0347232    0.02154  38.0%     -    4s
+     0     0    0.02301    0  141    0.03472    0.02301  33.7%     -    4s
+     0     0    0.02309    0  141    0.03472    0.02309  33.5%     -    4s
+     0     0    0.02309    0  141    0.03472    0.02309  33.5%     -    4s
+H    0     0                       0.0337498    0.02309  31.6%     -    4s
+     0     0    0.02733    0  133    0.03375    0.02733  19.0%     -    5s
+H    0     0                       0.0297794    0.02764  7.17%     -    5s
+     0     0     cutoff    0         0.02978    0.02978  0.00%     -    5s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 4
+
+Explored 1 nodes (8350 simplex iterations) in 5.14 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0297794 0.0337498 0.0347232 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.977941406154e-02, best bound 2.977941406154e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4839 rows and 3223 columns
+Presolve time: 0.77s
+Presolved: 9932 rows, 6360 columns, 43731 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3491 continuous, 2869 integer (2869 binary)
+
+Root relaxation: objective 1.045917e-02, 7317 iterations, 1.42 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01046    0 1499    0.50000    0.01046  97.9%     -    2s
+H    0     0                       0.1669688    0.01046  93.7%     -    2s
+H    0     0                       0.0582535    0.01046  82.0%     -    2s
+H    0     0                       0.0343975    0.01046  69.6%     -    3s
+H    0     0                       0.0325483    0.01046  67.9%     -    3s
+     0     0    0.01994    0  622    0.03255    0.01994  38.7%     -    4s
+     0     0    0.02860    0   65    0.03255    0.02860  12.1%     -    4s
+H    0     0                       0.0321846    0.02860  11.1%     -    4s
+     0     0     cutoff    0         0.03218    0.03218  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (7893 simplex iterations) in 4.46 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 7: 0.0321846 0.0325483 0.0325483 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.218457706739e-02, best bound 3.218457706739e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4060 rows and 2700 columns
+Presolve time: 0.73s
+Presolved: 10711 rows, 6883 columns, 47511 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3772 continuous, 3111 integer (3111 binary)
+
+Root relaxation: objective 1.018035e-02, 7202 iterations, 1.99 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01024    0 1784    0.50000    0.01024  98.0%     -    4s
+H    0     0                       0.0230542    0.01024  55.6%     -    4s
+H    0     0                       0.0227405    0.01024  55.0%     -    5s
+     0     0    0.02090    0  152    0.02274    0.02090  8.07%     -    5s
+
+Explored 1 nodes (7488 simplex iterations) in 5.94 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0227405 0.0230542 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.274054362098e-02, best bound 2.274054362098e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.697941
+
+Presolve removed 1175 rows and 805 columns
+Presolve time: 0.64s
+Presolved: 13596 rows, 8778 columns, 61717 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4824 continuous, 3954 integer (3954 binary)
+
+Root relaxation: objective 1.126442e-02, 10685 iterations, 3.82 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01126    0 2627    0.69794    0.01126  98.4%     -    5s
+H    0     0                       0.0642003    0.01126  82.5%     -    5s
+H    0     0                       0.0624001    0.01126  81.9%     -    7s
+     0     0    0.02587    0  958    0.06240    0.02587  58.5%     -    7s
+     0     0    0.04418    0  120    0.06240    0.04418  29.2%     -    8s
+H    0     0                       0.0619394    0.04418  28.7%     -    8s
+     0     0 infeasible    0         0.06194    0.06194  0.00%     -    8s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 2
+
+Explored 1 nodes (11790 simplex iterations) in 8.11 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0619394 0.0624001 0.0642003 0.697941 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.193935310208e-02, best bound 6.193935310208e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.75s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 4.291554e-03, 7336 iterations, 1.74 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00431    0 1389    0.50000    0.00431  99.1%     -    4s
+H    0     0                       0.0696810    0.00431  93.8%     -    4s
+H    0     0                       0.0353795    0.00431  87.8%     -    5s
+H    0     0                       0.0112757    0.00431  61.8%     -    5s
+     0     0    0.00881    0   39    0.01128    0.00881  21.9%     -    5s
+
+Explored 1 nodes (7643 simplex iterations) in 6.06 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0112757 0.0112757 0.0353795 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.127574563727e-02, best bound 1.127574563727e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.531055
+
+Presolve removed 3832 rows and 2564 columns
+Presolve time: 0.76s
+Presolved: 10939 rows, 7019 columns, 48650 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3858 continuous, 3161 integer (3161 binary)
+
+Root relaxation: objective 9.179138e-03, 7848 iterations, 1.56 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00918    0 1459    0.53105    0.00918  98.3%     -    3s
+H    0     0                       0.0254949    0.00918  64.0%     -    3s
+H    0     0                       0.0250729    0.00918  63.4%     -    4s
+     0     0    0.01795    0  484    0.02507    0.01795  28.4%     -    4s
+     0     0    0.02377    0    5    0.02507    0.02377  5.19%     -    4s
+H    0     0                       0.0247195    0.02377  3.84%     -    4s
+     0     0 infeasible    0         0.02472    0.02472  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (8270 simplex iterations) in 4.98 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 4: 0.0247195 0.0250729 0.0254949 0.531055 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.471951502250e-02, best bound 2.471951502250e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.73s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 7.752522e-03, 7236 iterations, 1.61 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00780    0 1686    0.50000    0.00780  98.4%     -    4s
+H    0     0                       0.0247379    0.00780  68.5%     -    4s
+H    0     0                       0.0231624    0.00780  66.3%     -    5s
+     0     0    0.02206    0  365    0.02316    0.02206  4.77%     -    5s
+
+Explored 1 nodes (7713 simplex iterations) in 6.05 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0231624 0.0247379 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.316240837513e-02, best bound 2.316240837513e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4561 rows and 3039 columns
+Presolve time: 0.78s
+Presolved: 10210 rows, 6544 columns, 45011 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3591 continuous, 2953 integer (2953 binary)
+
+Root relaxation: objective 6.674376e-03, 6998 iterations, 1.57 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00667    0 1530    0.50000    0.00667  98.7%     -    2s
+H    0     0                       0.0176948    0.00667  62.3%     -    3s
+H    0     0                       0.0166277    0.00667  59.9%     -    3s
+     0     0    0.01367    0  236    0.01663    0.01367  17.8%     -    4s
+     0     0    0.01612    0    9    0.01663    0.01612  3.06%     -    4s
+H    0     0                       0.0166233    0.01612  3.03%     -    4s
+     0     0 infeasible    0         0.01662    0.01662  0.00%     -    4s
+
+Cutting planes:
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (7301 simplex iterations) in 4.51 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0166233 0.0166277 0.0166277 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.662333870035e-02, best bound 1.662333870035e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4622 rows and 3080 columns
+Presolve time: 0.78s
+Presolved: 10149 rows, 6503 columns, 44708 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3569 continuous, 2934 integer (2934 binary)
+
+Root relaxation: objective 8.237339e-03, 7023 iterations, 1.33 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00824    0 1440    0.50000    0.00824  98.4%     -    3s
+H    0     0                       0.0203297    0.00824  59.5%     -    3s
+H    0     0                       0.0185770    0.00824  55.7%     -    4s
+     0     0 infeasible    0         0.01858    0.01858  0.00%     -    4s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (7295 simplex iterations) in 4.38 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.018577 0.0203297 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.857701239950e-02, best bound 1.857701239950e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.136636
+
+Presolve removed 11392 rows and 7469 columns
+Presolve time: 0.85s
+Presolved: 3379 rows, 2114 columns, 13052 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 1133 continuous, 981 integer (981 binary)
+
+Root relaxation: objective 1.019372e-02, 2575 iterations, 0.21 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01019    0  450    0.13664    0.01019  92.5%     -    1s
+H    0     0                       0.0883873    0.01019  88.5%     -    1s
+H    0     0                       0.0851917    0.01019  88.0%     -    1s
+H    0     0                       0.0267946    0.01019  62.0%     -    1s
+     0     0    0.01566    0  289    0.02679    0.01566  41.6%     -    1s
+     0     0    0.02305    0   23    0.02679    0.02305  14.0%     -    1s
+H    0     0                       0.0245372    0.02305  6.06%     -    1s
+H    0     0                       0.0240919    0.02305  4.33%     -    1s
+     0     0     cutoff    0         0.02409    0.02409  0.00%     -    1s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+
+Explored 1 nodes (2942 simplex iterations) in 1.89 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0240919 0.0245372 0.0267946 ... 0.136636
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.409186278361e-02, best bound 2.409186278361e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4609 rows and 3070 columns
+Presolve time: 0.77s
+Presolved: 10162 rows, 6513 columns, 44773 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3574 continuous, 2939 integer (2939 binary)
+
+Root relaxation: objective 4.968378e-03, 7154 iterations, 1.50 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00497    0 1256    0.50000    0.00497  99.0%     -    2s
+H    0     0                       0.0082560    0.00497  39.8%     -    2s
+     0     0    0.00751    0  139    0.00826    0.00751  8.99%     -    3s
+
+Explored 1 nodes (7355 simplex iterations) in 4.04 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 2: 0.00825596 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.255955594044e-03, best bound 8.255955594044e-03, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4609 rows and 3070 columns
+Presolve time: 0.76s
+Presolved: 10162 rows, 6513 columns, 44773 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3574 continuous, 2939 integer (2939 binary)
+
+Root relaxation: objective 9.292140e-03, 7220 iterations, 1.44 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00941    0 1492    0.50000    0.00941  98.1%     -    3s
+H    0     0                       0.0236180    0.00941  60.2%     -    3s
+H    0     0                       0.0232942    0.00941  59.6%     -    3s
+     0     0 infeasible    0         0.02329    0.02329  0.00%     -    4s
+
+Cutting planes:
+  MIR: 1
+
+Explored 1 nodes (7465 simplex iterations) in 4.06 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0232942 0.023618 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.329415768828e-02, best bound 2.329415768828e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4516 rows and 3007 columns
+Presolve time: 0.76s
+Presolved: 10255 rows, 6576 columns, 45232 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3607 continuous, 2969 integer (2969 binary)
+
+Root relaxation: objective 1.052551e-02, 6768 iterations, 1.44 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01053    0 1559    0.50000    0.01053  97.9%     -    2s
+H    0     0                       0.0380104    0.01053  72.3%     -    3s
+     0     0    0.01661    0  676    0.03801    0.01661  56.3%     -    4s
+     0     0    0.02829    0  117    0.03801    0.02829  25.6%     -    4s
+H    0     0                       0.0325916    0.02829  13.2%     -    4s
+H    0     0                       0.0311166    0.02829  9.10%     -    4s
+H    0     0                       0.0300364    0.02829  5.83%     -    4s
+     0     0     cutoff    0         0.03004    0.03004  0.00%     -    4s
+
+Cutting planes:
+  Implied bound: 4
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (7573 simplex iterations) in 4.73 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0300364 0.0311166 0.0325916 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.003635288081e-02, best bound 3.003635288081e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4547 rows and 3029 columns
+Presolve time: 0.77s
+Presolved: 10224 rows, 6554 columns, 45091 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3597 continuous, 2957 integer (2957 binary)
+
+Root relaxation: objective 7.296745e-03, 7738 iterations, 1.54 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00730    0 1451    0.50000    0.00730  98.5%     -    3s
+H    0     0                       0.1299431    0.00730  94.4%     -    3s
+H    0     0                       0.1132846    0.00730  93.6%     -    4s
+H    0     0                       0.0353132    0.00730  79.3%     -    4s
+     0     0    0.00863    0  493    0.03531    0.00863  75.6%     -    5s
+     0     0    0.00863    0  493    0.03531    0.00863  75.6%     -    5s
+     0     0    0.01025    0  161    0.03531    0.01025  71.0%     -    6s
+H    0     0                       0.0282450    0.01025  63.7%     -    6s
+     0     0    0.01139    0  129    0.02824    0.01139  59.7%     -    6s
+H    0     0                       0.0232538    0.01139  51.0%     -    6s
+     0     0    0.01428    0   83    0.02325    0.01428  38.6%     -    6s
+     0     0    0.01500    0   39    0.02325    0.01500  35.5%     -    6s
+H    0     0                       0.0202949    0.01500  26.1%     -    6s
+H    0     0                       0.0202276    0.01500  25.9%     -    6s
+     0     0     cutoff    0         0.02023    0.02023  0.00%     -    6s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 1
+  Flow cover: 1
+
+Explored 1 nodes (9005 simplex iterations) in 6.97 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.0202276 0.0202949 0.0232538 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.022758979396e-02, best bound 2.022758979396e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.723779
+
+Presolve removed 993 rows and 678 columns
+Presolve time: 0.64s
+Presolved: 13778 rows, 8905 columns, 62606 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4890 continuous, 4015 integer (4015 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   10737    2.0707414e-02   1.285567e+00   0.000000e+00      5s
+   10932    1.9706547e-02   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 1.970655e-02, 10932 iterations, 4.55 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01971    0 3137    0.72378    0.01971  97.3%     -    6s
+     0     0    0.01976    0 3149    0.72378    0.01976  97.3%     -   10s
+     0     0    0.03208    0 3137    0.72378    0.03208  95.6%     -   13s
+H    0     0                       0.1945190    0.03208  83.5%     -   14s
+     0     0    0.03208    0 1661    0.19452    0.03208  83.5%     -   15s
+H    0     0                       0.1761521    0.03208  81.8%     -   15s
+     0     0    0.04254    0  409    0.17615    0.04254  75.9%     -   17s
+     0     0    0.04298    0  427    0.17615    0.04298  75.6%     -   17s
+     0     0    0.04314    0  428    0.17615    0.04314  75.5%     -   18s
+     0     0    0.04327    0  412    0.17615    0.04327  75.4%     -   18s
+     0     0    0.05150    0  427    0.17615    0.05150  70.8%     -   18s
+     0     0    0.05150    0  427    0.17615    0.05150  70.8%     -   19s
+     0     0    0.05150    0  427    0.17615    0.05150  70.8%     -   19s
+     0     0    0.05150    0  427    0.17615    0.05150  70.8%     -   19s
+     0     0    0.05150    0  427    0.17615    0.05150  70.8%     -   19s
+     0     2    0.05150    0  427    0.17615    0.05150  70.8%     -   19s
+     1     3 infeasible    1         0.17615    0.06896  60.9%   692   20s
+*   76    46              10       0.1750039    0.10648  39.2%   126   21s
+*   87    33              11       0.1683037    0.10648  36.7%   117   21s
+H  102    35                       0.1496044    0.10648  28.8%   103   21s
+*  167    19               9       0.1480423    0.13460  9.08%  72.0   21s
+H  174     6                       0.1399038    0.13460  3.79%  69.5   21s
+
+Cutting planes:
+  Cover: 1
+  Implied bound: 94
+  MIR: 2
+
+Explored 197 nodes (26194 simplex iterations) in 21.56 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 8: 0.139904 0.148042 0.149604 ... 0.723779
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.399037943385e-01, best bound 1.399037943385e-01, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4038 rows and 2682 columns
+Presolve time: 0.74s
+Presolved: 10733 rows, 6901 columns, 47633 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3781 continuous, 3120 integer (3120 binary)
+
+Root relaxation: objective 1.378930e-02, 7865 iterations, 2.14 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01401    0 2044    0.50000    0.01401  97.2%     -    4s
+H    0     0                       0.0831787    0.01401  83.2%     -    4s
+     0     0    0.03836    0  792    0.08318    0.03836  53.9%     -    6s
+     0     0    0.04091    0  150    0.08318    0.04091  50.8%     -    6s
+H    0     0                       0.0813785    0.04091  49.7%     -    6s
+H    0     0                       0.0809178    0.04091  49.4%     -    6s
+H    0     0                       0.0768739    0.04091  46.8%     -    6s
+     0     0    0.05678    0  136    0.07687    0.05678  26.1%     -    7s
+H    0     0                       0.0707316    0.05678  19.7%     -    7s
+     0     0     cutoff    0         0.07073    0.07073  0.00%     -    7s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 2
+
+Explored 1 nodes (9092 simplex iterations) in 7.11 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 6: 0.0707316 0.0768739 0.0809178 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.073156859894e-02, best bound 7.073156859894e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.704205
+
+Presolve removed 1158 rows and 792 columns
+Presolve time: 0.63s
+Presolved: 13613 rows, 8791 columns, 61809 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 4831 continuous, 3960 integer (3960 binary)
+
+Root relaxation: objective 7.730612e-03, 9948 iterations, 2.87 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00773    0 2066    0.70420    0.00773  98.9%     -    4s
+H    0     0                       0.0254922    0.00773  69.7%     -    4s
+H    0     0                       0.0224948    0.00773  65.6%     -    6s
+     0     0    0.01657    0  552    0.02249    0.01657  26.3%     -    6s
+
+Explored 1 nodes (10299 simplex iterations) in 6.56 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.0224948 0.0254922 0.704205 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.249480789343e-02, best bound 2.249480789343e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4115 rows and 2737 columns
+Presolve time: 0.74s
+Presolved: 10656 rows, 6846 columns, 47234 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3752 continuous, 3094 integer (3094 binary)
+
+Root relaxation: objective 4.733710e-03, 7169 iterations, 1.99 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00476    0 1555    0.50000    0.00476  99.0%     -    4s
+H    0     0                       0.0110840    0.00476  57.0%     -    4s
+     0     0    0.00837    0  179    0.01108    0.00837  24.5%     -    6s
+
+Explored 1 nodes (7519 simplex iterations) in 6.23 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 3: 0.011084 0.011084 0.5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.108399465081e-02, best bound 1.108399465081e-02, gap 0.0000%
+Optimize a model with 14771 rows, 9583 columns and 71548 nonzeros
+Variable types: 5249 continuous, 4334 integer (4334 binary)
+Coefficient statistics:
+  Matrix range     [2e-07, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e-08, 1e+00]
+
+Loaded MIP start with objective 0.5
+
+Presolve removed 4429 rows and 2948 columns
+Presolve time: 0.76s
+Presolved: 10342 rows, 6635 columns, 45767 nonzeros
+
+Warning: Thread count (8) is larger than core count (2)
+         Reduce the value of the Threads parameter to improve performance
+
+Variable types: 3637 continuous, 2998 integer (2998 binary)
+
+Root relaxation: objective 1.037622e-02, 7082 iterations, 1.67 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.01038    0 1416    0.50000    0.01038  97.9%     -    3s
+H    0     0                       0.0733420    0.01038  85.9%     -    3s
+H    0     0                       0.0349917    0.01038  70.3%     -    4s
+     0     0    0.01820    0  783    0.03499    0.01820  48.0%     -    4s
+     0     0    0.02970    0   63    0.03499    0.02970  15.1%     -    4s
+H    0     0                       0.0349776    0.02970  15.1%     -    4s
+     0     0 infeasible    0         0.03498    0.03498  0.00%     -    4s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 1
+
+Explored 1 nodes (7615 simplex iterations) in 4.76 seconds
+Thread count was 8 (of 2 available processors)
+
+Solution count 5: 0.0349776 0.0349917 0.0349917 ... 0.5
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.497757956838e-02, best bound 3.497757956838e-02, gap 0.0000%
