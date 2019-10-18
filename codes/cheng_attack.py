@@ -1,16 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 16 12:45:28 2019
-
-@author: Ying
-"""
 import numpy as np
 import xgboost as xgb
 import scipy
-import pandas as pd
-import os
-import multiprocessing as mp
-results = []
+
 
 def predict(model, sampleX, nclasses):
     dtest = xgb.DMatrix(scipy.sparse.csr_matrix(sampleX))
@@ -26,7 +17,7 @@ def predict(model, sampleX, nclasses):
 
 
 
-def g_theta_local(model, sampleX, sample_label, theta, pre_v, nclasses, ratio = 0.03, tolerance = 0.0005):
+def g_theta_local(model, sampleX, sample_label, theta, pre_v, nclasses, ratio = 0.02, tolerance = 0.0005):
     theta = theta / np.linalg.norm(theta)
     if predict(model, (sampleX + theta * pre_v), nclasses) == sample_label:
         v_left = pre_v
@@ -52,10 +43,7 @@ def g_theta_local(model, sampleX, sample_label, theta, pre_v, nclasses, ratio = 
     dis = np.abs(max(t, key=abs))
     return v_right, dis
 
-def attack(dataset, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.001, iterations = 1000):    
-    model = xgb.Booster()
-    model_path = '/home/cai7/models/xgb/{}_xgb.model'.format(dataset)
-    model.load_model(model_path)
+def attack(model, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.01, iterations = 1000):    
     q = 20    
     nf = len(x0)    
     best_theta, g_theta, dis = None, float('inf'), float('inf')
@@ -74,7 +62,7 @@ def attack(dataset, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0
     min_v = pre_v
     count = 0
     for t in range(iterations):        
-        print(str(t))
+        #print(str(t))
         grad = np.zeros(nf)
         for _i in range(q):
             u = np.random.normal(size = nf)            
@@ -94,7 +82,7 @@ def attack(dataset, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0
                 min_theta = new_theta
                 min_v = new_v
                 new_step = new_step + step
-                print('replaced')
+                #print('replaced')
             else:
                 break
         new_step = step
@@ -108,7 +96,7 @@ def attack(dataset, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0
                 min_dis = new_dis
                 min_theta = new_theta
                 min_v = new_v    
-                print('replaced')       
+                #print('replaced')       
             else:
                 break
         print(str(min_dis))
@@ -143,28 +131,4 @@ def fine_grained_binary_search(model, x0, y0, theta, initial_lbd, nclasses, tole
     t = theta * lbd_hi
     dis = np.abs(max(t, key=abs))
     return lbd_hi, dis
-
-if __name__ == '__main__':
-    pool = mp.Pool(mp.cpu_count())   
-    dataset = 'breast_cancer'
-    test_df = pd.read_pickle('/home/cai7/chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
-    test_data = np.array(test_df.drop(columns = ['label']))
-    test_label = test_df['label'].tolist()
-    dtest = xgb.DMatrix(test_data, label = test_label)
-    for i, row in enumerate(test_data):
-        pool.apply_async(attack, args=(dataset, test_data, test_label, row, test_label[i], 2, i), callback=collect_result)
-    pool.close()
-    pool.join()
-    
-    os.chdir('/home/cai7/attack/cheng')
-    results.sort(key=lambda x: x[0])
-    results_final = [r for i, r, f in results]
-    index = [i for i, r, f in results]
-    pert = [f for i, r, f in results]
-    df = pd.DataFrame()
-    df['index'] = index
-    df['distance'] = results_final
-    df['point'] = pert
-    df.to_csv('{}_cheng_attack'.format(dataset))
-
 

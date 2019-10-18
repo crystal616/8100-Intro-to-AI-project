@@ -10,60 +10,56 @@ import numpy as np
 import os
 os.chdir('/home/cai7/codes')
 import cheng_attack
-import multiprocessing as mp
-pool = mp.Pool(mp.cpu_count())
+from sklearn.model_selection import train_test_split
 
-dataset = 'breast_cancer'
+dataset = 'MNIST2_6'
+nclasses = 2
+
 model = xgb.Booster()
 model_path = '/home/cai7/models/xgb/{}_xgb.model'.format(dataset)
 model.load_model(model_path)
 test_df = pd.read_pickle('/home/cai7/chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
+if test_df.shape[0] >= 1000:
+    _, test_df = train_test_split(test_df, test_size = 200)
 
+
+test_df = test_df.reset_index(drop=True)
 test_data = np.array(test_df.drop(columns = ['label']))
 test_label = test_df['label'].tolist()
 dtest = xgb.DMatrix(test_data, label = test_label)
 
-i = 2
-s = test_data[i]
-sl = test_label[i]
-r = attack(model, test_data, test_label, s, sl, 2, i)
+ori_points = []
+results = []
+for i in range(len(test_label)):
+    s = test_data[i]
+    sl = test_label[i]
+    r = cheng_attack.attack(model, test_data, test_label, s, sl, nclasses, i)
+    ori_points.append(s)
+    results.append(r)
+    print('{} is done'.format(i))
 
 
-model, tdata, tlabel, x0, y0, nclasses, index = model, test_data, test_label, s, sl, 2, i
-step = 0.2
-beta = 0.001
-iterations = 1000
-
-q = 20    
-nf = len(x0)    
-best_theta, g_theta, dis = None, float('inf'), float('inf')
-
-for i in range(len(tlabel)):
-        if predict(model, tdata[i], nclasses) != y0:
-            print(str(i))
-            theta = tdata[i] - x0
-            initial_lbd = 1.0            
-            lbd, distance = fine_grained_binary_search(model, x0, y0, theta, initial_lbd, nclasses)
-            if distance < dis:
-                best_theta, g_theta, dis = theta, lbd, distance
-
-theta = best_theta
-pre_v = g_theta
-stopping = 0.0005    
-min_dis = dis
-min_theta = theta
-min_v = pre_v
-count = 0
+total_dis = 0
+pert = pd.DataFrame()
+index = []
+points = []
+dis = []
+for (i, d, p) in results:
+    index.append(i)
+    points.append(p)
+    dis.append(d)
+    total_dis += d
 
 
+pert['index'] = index
+pert['distance'] = dis
+pert['pert point'] = points
+pert['ori point'] = ori_points
+os.chdir('/home/cai7/attack/cheng')
+pert.to_csv('{}_cheng_attack_xgb.txt'.format(dataset))
+with open('{}_cheng_xgb_ave.txt'.format(dataset), 'w') as f:
+    f.write('average distance: ' + str(total_dis/len(test_label)))
 
+  
 
-
-
-
-(model, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.001, iterations = 1000)
-
-results = [pool.apply_async(cheng_attack.attack, args=(model, test_data[i], test_label[i], 0, 2)) for i in range(len(test_label))]
-    
-pool.close()
-pool.join()
+f.close()
