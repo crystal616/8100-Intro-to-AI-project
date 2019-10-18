@@ -66,5 +66,6 @@ Cai, Ying & Yuxin Cui
                  We also output the average distance to file datasetname_cheng_rxgb_ave.txt
 
 11. Kantchelian's attack:
-             
+	      For example, attack MNIST2_6 xgb model:
+		nohup python xgbKantchelianAttack.py -d=../chosen_sample/xgb/MNIST2_6_xgb_samples.pkl -m=../models/xgb/MNIST2_6_xgb.model -c=2 >../Kattack_result/xgb/MNIST2_6_xgb_log.txt 2>&1 &             
              
