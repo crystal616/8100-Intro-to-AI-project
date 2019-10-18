@@ -14,13 +14,12 @@ from sklearn.model_selection import train_test_split
 
 dataset = 'MNIST2_6'
 nclasses = 2
-
 model = xgb.Booster()
 model_path = '/home/cai7/models/xgb/{}_xgb.model'.format(dataset)
 model.load_model(model_path)
 test_df = pd.read_pickle('/home/cai7/chosen_sample/xgb/{}_xgb_samples.pkl'.format(dataset))
 if test_df.shape[0] >= 1000:
-    _, test_df = train_test_split(test_df, test_size = 200)
+    _, test_df = train_test_split(test_df, test_size = 500)
 
 
 test_df = test_df.reset_index(drop=True)

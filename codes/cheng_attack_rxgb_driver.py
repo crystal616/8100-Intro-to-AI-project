@@ -12,9 +12,9 @@ os.chdir('/home/cai7/codes')
 import cheng_attack_rxgb
 from sklearn.datasets import load_svmlight_file
 
-dataset = 'breast_cancer'
-nclasses = 2
-n_features = 9
+dataset = 'Fashion_MNIST'
+nclasses = 10
+n_features = 784
 binary = False
 if nclasses == 2:
     binary = True
@@ -26,8 +26,8 @@ test_data, test_label = load_svmlight_file('/home/cai7/chosen_sample/rxgb/{}_rxg
 test_data = test_data.toarray()
 test_label = test_label.astype('int')
 if len(test_label) >= 1000:
-    test_data = test_data[:200]
-    test_label = test_label[:200]
+    test_data = test_data[:500]
+    test_label = test_label[:500]
 
 ori_points = []
 results = []

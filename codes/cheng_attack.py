@@ -109,6 +109,8 @@ def attack(model, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.0
             #print('count: ' + str(count))
             if (count > 30):
                 break
+        if min_dis < 0.001:
+            break
     return (index, min_dis, (x0 + min_theta * min_v))
 
 

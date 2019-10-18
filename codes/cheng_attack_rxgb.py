@@ -123,7 +123,7 @@ def attack(bst, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.01,
                 min_theta = new_theta
                 min_v = new_v
                 new_step = new_step + step
-                #print('replaced')
+                print('replaced')
             else:
                 break
         new_step = step
@@ -150,6 +150,8 @@ def attack(bst, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.01,
             #print('count: ' + str(count))
             if (count > 30):
                 break
+        if min_dis < 0.001:
+            break
     return (index, min_dis, (x0 + min_theta * min_v))
 
 
@@ -160,6 +162,7 @@ def collect_result(result):
 
 
 def fine_grained_binary_search(model, x0, y0, theta, initial_lbd, nclasses, tolerance = 0.001):
+    #print('binary_search')
     lbd = initial_lbd
     lbd_hi = lbd
     lbd_lo = 0.0
