@@ -12,15 +12,16 @@ os.chdir('../codes')
 import cheng_attack_rxgb
 from sklearn.datasets import load_svmlight_file
 
-dataset = 'covtype'
-nclasses = 7
-n_features = 54
+dataset = 'webspam'
+nclasses = 2
+n_features = 254
 binary = False
 if nclasses == 2:
     binary = True
 
 bst = xgb.Booster()
-model_path = '../models/rxgb/{}/{}_rxgb.model'.format(dataset, dataset)
+#model_path = '../models/rxgb/{}/{}_rxgb.model'.format(dataset, dataset)
+model_path = '../models/rxgb/{}_rxgb.model'.format(dataset, dataset)
 bst.load_model(model_path)
 test_data, test_label = load_svmlight_file('../chosen_sample/rxgb/{}_rxgb_samples.s'.format(dataset), n_features = n_features)
 test_data = test_data.toarray()
