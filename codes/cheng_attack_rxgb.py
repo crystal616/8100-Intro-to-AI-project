@@ -53,7 +53,7 @@ class xgboost_wrapper():
 
 
 
-def g_theta_local(model, sampleX, sample_label, theta, pre_v, nclasses, ratio = 0.02, tolerance = 0.0005):
+def g_theta_local(model, sampleX, sample_label, theta, pre_v, nclasses, ratio = 0.02, tolerance = 0.001):
     theta = theta / np.linalg.norm(theta)
     if model.predict((sampleX + theta * pre_v)) == sample_label:
         v_left = pre_v
@@ -97,7 +97,7 @@ def attack(bst, tdata, tlabel, x0, y0, nclasses, index, step = 0.2, beta = 0.01,
                 best_theta, g_theta, dis = theta, lbd, distance
     theta = best_theta
     pre_v = g_theta
-    stopping = 0.0001    
+    stopping = 0.0005    
     min_dis = dis
     min_theta = theta
     min_v = pre_v
@@ -159,7 +159,7 @@ def collect_result(result):
     results.append(result)
 
 
-def fine_grained_binary_search(model, x0, y0, theta, initial_lbd, nclasses, tolerance = 0.0001):
+def fine_grained_binary_search(model, x0, y0, theta, initial_lbd, nclasses, tolerance = 0.001):
     lbd = initial_lbd
     lbd_hi = lbd
     lbd_lo = 0.0
