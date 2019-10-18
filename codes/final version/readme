@@ -1,0 +1,16 @@
+1. Copy py file creat_folder.py to the folder created for this project.
+all files in folder code 
+
+2. enviroment: Clemson Palmetto, 24+ cores, 100+ gb mem.
+               Module: Anaconda3/5.1.0
+               Python: 3.7.4
+               Packages needed: xgboost, pandas, numpy, scipy, sklearn, mlxtend, subprocess, time, pickle, xlrd
+               May need other packages, please install as required.
+               
+3. 
+3. Install robust_xgboost package from Github using Unix command line:
+               git clone --recursive https://github.com/chenhongge/RobustTrees.git
+               cd RobustTrees
+               ./build.sh
+               make
+               
