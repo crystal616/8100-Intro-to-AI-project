@@ -12,8 +12,8 @@ import os
 import cheng_attack
 from sklearn.model_selection import train_test_split
 
-dataset = 'covtype'
-nclasses = 7
+dataset = 'cod_rna'
+nclasses = 2
 model = xgb.Booster()
 model_path = '../models/xgb/{}_xgb.model'.format(dataset)
 model.load_model(model_path)
