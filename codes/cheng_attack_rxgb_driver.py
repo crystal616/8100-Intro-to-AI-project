@@ -12,9 +12,9 @@ os.chdir('../codes')
 import cheng_attack_rxgb
 from sklearn.datasets import load_svmlight_file
 
-dataset = 'cod_rna'
+dataset = 'MNIST2_6'
 nclasses = 2
-n_features = 8
+n_features = 784
 binary = False
 if nclasses == 2:
     binary = True

@@ -10,3 +10,4 @@ conda install -c gurobi gurobi
 conda install -c anaconda scipy 
 conda install -c anaconda scikit-learn
 conda install -c anaconda numpy
+pip install pandas
