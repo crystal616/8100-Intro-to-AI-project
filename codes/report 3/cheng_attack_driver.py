@@ -33,12 +33,12 @@ def predict(model, sampleX, nclasses):
     return prediction
 
 if __name__ == '__main__':
-	parser = argparse.ArgumentParser()
-	parser.add_argument('testset', type = str, help='test data path')
-	parser.add_argument('m', type = str, help='model path')
-	parser.add_argument('c', type=int, help='number of classes')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('testset', type = str, help='test data path')
+    parser.add_argument('m', type = str, help='model path')
+    parser.add_argument('c', type=int, help='number of classes')
     parser.add_argument('n', type=int, help='number of features')
-	parser.add_argument('--feature_start', type=int, default=0, choices=[0,1], help='feature number starts from which index? For cod-rna and higgs, this should be 0.')
+    parser.add_argument('--feature_start', type=int, default=0, choices=[0,1], help='feature number starts from which index? For cod-rna and higgs, this should be 0.')
 
     args = parser.parse_args()
     
