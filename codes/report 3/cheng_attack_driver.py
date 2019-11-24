@@ -71,7 +71,9 @@ if __name__ == '__main__':
     ori_points = []
     results = []
     used_time = []
-    for tt in range(n_selected):
+    count = 0
+    while count<n_selected:
+        tt = 0
         s = test_data[tt]
         sl = test_label[tt]
         if predict(model, s, nclasses) == sl:        
@@ -81,8 +83,9 @@ if __name__ == '__main__':
             used_time.append(end - start)
             ori_points.append(s)
             results.append(r)
+            count += 1
             print('sample {} is done'.format(tt))
-        
+        tt += 1
 
     total_dis = 0
     pert = pd.DataFrame()
