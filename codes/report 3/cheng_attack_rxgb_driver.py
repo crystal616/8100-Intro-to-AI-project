@@ -87,10 +87,10 @@ if __name__ == '__main__':
     test_label = df['label'].tolist()
     test_data = np.array(df.drop(columns=['label']))
     
-    if n<10:
+    if n<200:
         n_selected = n
     else:
-        n_selected = 10
+        n_selected = 200
 
     if nclasses == 2:
         binary = True
