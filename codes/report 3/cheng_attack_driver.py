@@ -72,8 +72,8 @@ if __name__ == '__main__':
     results = []
     used_time = []
     count = 0
-    while count<n_selected:
-        tt = 0
+    tt = 0
+    while count<n_selected:        
         s = test_data[tt]
         sl = test_label[tt]
         if predict(model, s, nclasses) == sl:        
