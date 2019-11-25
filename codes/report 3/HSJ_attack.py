@@ -58,7 +58,7 @@ if __name__ == '__main__':
     predictions = np.argmax(classifier.predict(test_data), axis=1)
         
     attack = HopSkipJump(classifier=classifier, norm = np.inf)
-    n_selected = 3
+    n_selected = 100
     corrected = []
     c_labels = []
     for i in range(len(test_label)):
