@@ -62,8 +62,8 @@ if __name__ == '__main__':
     test_data = np.array(df.drop(columns=['label']))   
     
     predictions = np.argmax(classifier.predict(test_data), axis=1)
-    attack = BoundaryAttack(classifier=classifier, targeted=False)
-    n_selected = 100
+    attack = BoundaryAttack(classifier=classifier, targeted=False, delta=0.05, epsilon=0.05, step_adapt=0.5)
+    n_selected = 3
     corrected = []
     c_labels = []
     for i in range(len(test_label)):
